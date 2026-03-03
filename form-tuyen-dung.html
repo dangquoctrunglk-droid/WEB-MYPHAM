@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ứng Tuyển - HAHAHIHI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/recruitment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (loaded from js/header.js) -->
+    <div id="header-placeholder"></div>
+    <script src="js/header.js"></script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+          </li>
+          <li class="separator">/</li>
+          <li><a href="tuyen-dung.html">Tuyển dụng</a></li>
+          <li class="separator">/</li>
+          <li class="current">Điền đơn ứng tuyển</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Application Form -->
+    <section class="application-section">
+      <div class="container">
+        <div class="application-form-wrapper">
+          <h2>📝 Đơn Ứng Tuyển</h2>
+          <p class="form-subtitle">
+            Vui lòng điền đầy đủ thông tin bên dưới. Chúng tôi sẽ liên hệ bạn
+            trong 3-5 ngày làm việc.
+          </p>
+
+          <form>
+            <!-- Personal Info -->
+            <h3 class="form-section-title">
+              <i class="fas fa-user"></i> Thông tin cá nhân
+            </h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Họ và tên <span class="required">*</span></label>
+                <input
+                  type="text"
+                  placeholder="Nhập họ và tên đầy đủ"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Email <span class="required">*</span></label>
+                <input type="email" placeholder="example@email.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Số điện thoại <span class="required">*</span></label>
+                <input type="tel" placeholder="0912 345 678" required />
+              </div>
+              <div class="form-group">
+                <label>Ngày sinh</label>
+                <input type="date" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Địa chỉ</label>
+              <input type="text" placeholder="Nhập địa chỉ hiện tại" />
+            </div>
+
+            <!-- Job Info -->
+            <h3 class="form-section-title" style="margin-top: 30px">
+              <i class="fas fa-briefcase"></i> Thông tin ứng tuyển
+            </h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Vị trí ứng tuyển <span class="required">*</span></label>
+                <select required>
+                  <option value="">-- Chọn vị trí --</option>
+                  <option>Digital Marketing Specialist</option>
+                  <option>Frontend Developer (ReactJS)</option>
+                  <option>Beauty Advisor / Tư vấn viên</option>
+                  <option>Graphic Designer</option>
+                  <option>Nhân viên kho vận</option>
+                  <option>Khác</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Hình thức làm việc</label>
+                <select>
+                  <option>Full-time</option>
+                  <option>Part-time</option>
+                  <option>Thực tập</option>
+                  <option>Remote</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Mức lương mong muốn</label>
+                <input type="text" placeholder="VD: 15-20 triệu/tháng" />
+              </div>
+              <div class="form-group">
+                <label>Ngày bắt đầu có thể làm việc</label>
+                <input type="date" />
+              </div>
+            </div>
+
+            <!-- Education -->
+            <h3 class="form-section-title" style="margin-top: 30px">
+              <i class="fas fa-graduation-cap"></i> Học vấn & Kinh nghiệm
+            </h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Trình độ học vấn <span class="required">*</span></label>
+                <select required>
+                  <option value="">-- Chọn trình độ --</option>
+                  <option>Trung học phổ thông</option>
+                  <option>Trung cấp / Cao đẳng</option>
+                  <option>Đại học</option>
+                  <option>Sau đại học</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Số năm kinh nghiệm</label>
+                <select>
+                  <option>Chưa có kinh nghiệm</option>
+                  <option>Dưới 1 năm</option>
+                  <option>1-2 năm</option>
+                  <option>2-3 năm</option>
+                  <option>3-5 năm</option>
+                  <option>Trên 5 năm</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Trường / Đơn vị đào tạo</label>
+              <input type="text" placeholder="Tên trường đại học / cao đẳng" />
+            </div>
+            <div class="form-group">
+              <label>Mô tả kinh nghiệm làm việc</label>
+              <textarea
+                placeholder="Mô tả ngắn gọn về kinh nghiệm, kỹ năng và thành tích của bạn..."
+              ></textarea>
+            </div>
+
+            <!-- CV Upload -->
+            <h3 class="form-section-title" style="margin-top: 30px">
+              <i class="fas fa-file-alt"></i> CV / Hồ sơ
+            </h3>
+            <div class="form-group">
+              <label>Tải lên CV <span class="required">*</span></label>
+              <div class="file-upload">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>
+                  Kéo thả file vào đây hoặc
+                  <span class="browse-text">chọn file</span>
+                </p>
+                <p class="file-info">
+                  Hỗ trợ định dạng: PDF, DOC, DOCX (Tối đa 5MB)
+                </p>
+                <input
+                  type="file"
+                  accept=".pdf,.doc,.docx"
+                  style="display: none"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Portfolio / Link tham khảo (nếu có)</label>
+              <input type="url" placeholder="https://yourportfolio.com" />
+            </div>
+
+            <!-- Additional -->
+            <div class="form-group">
+              <label>Lời nhắn cho nhà tuyển dụng</label>
+              <textarea
+                placeholder="Giới thiệu ngắn về bản thân, lý do bạn muốn gia nhập HAHAHIHI..."
+              ></textarea>
+            </div>
+
+            <div class="form-group" style="margin-top: 10px">
+              <label
+                style="
+                  display: flex;
+                  align-items: flex-start;
+                  gap: 8px;
+                  cursor: pointer;
+                "
+              >
+                <input
+                  type="checkbox"
+                  required
+                  style="margin-top: 3px; accent-color: var(--primary)"
+                />
+                <span style="font-size: 13px; color: var(--text-gray)"
+                  >Tôi cam kết thông tin trên là chính xác và đồng ý với
+                  <a href="#" style="color: var(--primary)"
+                    >điều khoản bảo mật</a
+                  >
+                  của HAHAHIHI.</span
+                >
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <a href="tuyen-dung.html" class="btn btn-secondary">← Quay lại</a>
+              <button type="submit" class="btn btn-primary btn-lg">
+                <i class="fas fa-paper-plane"></i> Gửi đơn ứng tuyển
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer + Back to top (loaded from js/footer.js) -->
+    <div id="footer-placeholder"></div>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

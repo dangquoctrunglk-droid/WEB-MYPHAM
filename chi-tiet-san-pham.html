@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serum Vitamin C - Chi Tiết Sản Phẩm - HAHAHIHI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product-detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (loaded from js/header.js) -->
+    <div id="header-placeholder"></div>
+    <script src="js/header.js"></script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+          </li>
+          <li class="separator">/</li>
+          <li><a href="danh-muc.html">Chăm sóc da</a></li>
+          <li class="separator">/</li>
+          <li><a href="san-pham.html">Serum / Tinh chất</a></li>
+          <li class="separator">/</li>
+          <li class="current">Serum Vitamin C 23%</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Product Detail -->
+    <section class="product-detail-section">
+      <div class="container">
+        <div class="product-detail">
+          <!-- Gallery -->
+          <div class="product-gallery">
+            <div class="main-image">
+              <img
+                src="images/serum-vitamin-c.jpg"
+                alt="Serum Vitamin C"
+                id="mainImage"
+              />
+            </div>
+            <div class="thumb-list">
+              <div class="thumb active">
+                <img
+                  src="images/serum-vitamin-c.jpg"
+                  alt="Thumb 1"
+                />
+              </div>
+              <div class="thumb">
+                <img
+                  src="images/kem-duong-am.jpg"
+                  alt="Thumb 2"
+                />
+              </div>
+              <div class="thumb">
+                <img
+                  src="images/toner.jpg"
+                  alt="Thumb 3"
+                />
+              </div>
+              <div class="thumb">
+                <img
+                  src="images/serum-green-tea.jpg"
+                  alt="Thumb 4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="product-info-detail">
+            <span class="product-brand-tag">THE ORDINARY</span>
+            <h1>Serum Vitamin C Suspension 23% + HA Spheres 2%</h1>
+
+            <div class="rating-reviews">
+              <span class="stars">★★★★★</span>
+              <span>4.8/5</span>
+              <span>|</span>
+              <span>128 đánh giá</span>
+              <span>|</span>
+              <span>Đã bán 1.2k+</span>
+            </div>
+
+            <p class="product-sku">SKU: TO-VTC23-30ML</p>
+
+            <div class="price-box">
+              <span class="price-current">420.000đ</span>
+              <span class="price-old">600.000đ</span>
+              <span class="discount-tag">-30%</span>
+            </div>
+
+            <p class="product-description-short">
+              Serum Vitamin C nồng độ cao 23% kết hợp với Hyaluronic Acid giúp
+              làm sáng da, mờ thâm nám và chống oxy hóa hiệu quả. Công thức dạng
+              huyền phù (suspension) giữ nguyên hoạt tính Vitamin C nguyên chất,
+              mang lại hiệu quả tối ưu cho làn da.
+            </p>
+
+            <!-- Variants -->
+            <div class="product-variants">
+              <div class="variant-group">
+                <label>Dung tích:</label>
+                <div class="variant-options">
+                  <span class="option active">30ml</span>
+                  <span class="option">60ml</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quantity -->
+            <div class="quantity-box">
+              <label>Số lượng:</label>
+              <div class="quantity-selector">
+                <button>−</button>
+                <input type="number" value="1" min="1" />
+                <button>+</button>
+              </div>
+              <span class="stock-status"
+                ><i class="fas fa-check-circle"></i> Còn hàng (58 sản
+                phẩm)</span
+              >
+            </div>
+
+            <!-- Actions -->
+            <div class="product-action-buttons">
+              <a href="thanh-toan.html" class="btn btn-primary btn-lg">
+                <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+              </a>
+              <a href="thanh-toan.html" class="btn btn-accent btn-lg">
+                Mua ngay
+              </a>
+            </div>
+
+            <!-- Meta -->
+            <div class="product-meta">
+              <span><strong>Thương hiệu:</strong> The Ordinary (DECIEM)</span>
+              <span><strong>Xuất xứ:</strong> Canada</span>
+              <span
+                ><strong>Loại da:</strong> Mọi loại da (trừ da nhạy cảm)</span
+              >
+              <span
+                ><i class="fas fa-truck" style="color: var(--primary)"></i> Miễn
+                phí vận chuyển cho đơn từ 500.000đ</span
+              >
+              <span
+                ><i class="fas fa-shield-alt" style="color: #10b981"></i> Cam
+                kết chính hãng 100%</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="product-tabs">
+          <div class="tab-header">
+            <button class="active" onclick="openTab(event, 'description')">
+              Mô tả sản phẩm
+            </button>
+            <button onclick="openTab(event, 'ingredients')">Thành phần</button>
+            <button onclick="openTab(event, 'usage')">Hướng dẫn sử dụng</button>
+            <button onclick="openTab(event, 'reviews')">Đánh giá (128)</button>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active" id="description">
+              <p>
+                <strong>Serum Vitamin C Suspension 23% + HA Spheres 2%</strong>
+                là sản phẩm serum Vitamin C nồng độ cao từ thương hiệu The
+                Ordinary, giúp làm sáng da, mờ thâm nám và bảo vệ da khỏi tác
+                hại của gốc tự do.
+              </p>
+              <p>
+                Sản phẩm chứa Vitamin C nguyên chất (L-Ascorbic Acid) ở nồng độ
+                23% - mức cao nhất trong dòng sản phẩm Vitamin C của The
+                Ordinary. Kết hợp cùng HA Spheres giúp dưỡng ẩm sâu, giữ da mềm
+                mịn.
+              </p>
+              <h3 style="margin: 16px 0 10px; font-size: 16px">
+                Công dụng chính:
+              </h3>
+              <ul>
+                <li>Làm sáng da, cải thiện tone da không đều</li>
+                <li>Mờ thâm nám, vết thâm mụn</li>
+                <li>Chống oxy hóa, bảo vệ da khỏi gốc tự do</li>
+                <li>Kích thích sản sinh collagen, giảm nếp nhăn</li>
+                <li>Dưỡng ẩm với Hyaluronic Acid Spheres</li>
+              </ul>
+            </div>
+            <div class="tab-pane" id="ingredients">
+              <p><strong>Thành phần chính:</strong></p>
+              <ul>
+                <li>
+                  Ascorbic Acid (Vitamin C) 23% - Chống oxy hóa, làm sáng da
+                </li>
+                <li>Hyaluronic Acid Spheres 2% - Dưỡng ẩm sâu</li>
+                <li>Squalane - Làm mềm, giữ ẩm cho da</li>
+              </ul>
+              <p style="margin-top: 16px">
+                <strong>Full ingredients:</strong> Ascorbic Acid, Squalane,
+                Isodecyl Neopentanoate, Isocetyl Stearoyl Stearate,
+                Ethylene/Propylene/Styrene Copolymer, Ethylhexyl Palmitate,
+                Sodium Hyaluronate, Glucomannan, Butylene/Ethylene/Styrene
+                Copolymer, Silica Dimethyl Silylate, Stearalkonium Hectorite,
+                Propylene Carbonate.
+              </p>
+            </div>
+            <div class="tab-pane" id="usage">
+              <p><strong>Hướng dẫn sử dụng:</strong></p>
+              <ul>
+                <li>Sử dụng vào buổi tối, sau bước toner</li>
+                <li>Lấy 2-3 giọt serum ra lòng bàn tay</li>
+                <li>Ấn nhẹ lên da mặt và cổ, tránh vùng mắt</li>
+                <li>Có thể có cảm giác hơi nóng/rát nhẹ do nồng độ cao</li>
+                <li>Sử dụng kem chống nắng vào ban ngày</li>
+                <li>Không kết hợp với Niacinamide, AHA/BHA cùng lúc</li>
+              </ul>
+            </div>
+            <div class="tab-pane" id="reviews">
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="avatar">TL</div>
+                  <div>
+                    <h4>Trần Linh</h4>
+                    <span class="date">15/02/2026</span>
+                  </div>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">
+                  Sản phẩm rất tốt! Sau 2 tuần sử dụng da mình sáng hơn rõ rệt,
+                  các vết thâm mụn cũng mờ đi nhiều. Giao hàng nhanh, đóng gói
+                  cẩn thận. Sẽ mua lại!
+                </p>
+              </div>
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="avatar">NH</div>
+                  <div>
+                    <h4>Nguyễn Hương</h4>
+                    <span class="date">10/02/2026</span>
+                  </div>
+                </div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">
+                  Mình da hỗn hợp, dùng serum này thấy da sáng lên và đều màu
+                  hơn. Ban đầu có hơi rát nhẹ nhưng quen rồi thì ổn. Giá rẻ hơn
+                  thị trường nhiều, chính hãng luôn.
+                </p>
+              </div>
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="avatar">LT</div>
+                  <div>
+                    <h4>Lê Thảo</h4>
+                    <span class="date">28/01/2026</span>
+                  </div>
+                </div>
+                <div class="review-stars">★★★★☆</div>
+                <p class="review-text">
+                  Sản phẩm tốt nhưng texture hơi khô, cần thêm dầu hoặc kem
+                  dưỡng sau. Hiệu quả làm sáng da thì rõ ràng sau 1 tháng sử
+                  dụng.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Products -->
+        <div class="related-products">
+          <div class="section-header">
+            <p class="subtitle">Gợi ý</p>
+            <h2>Sản Phẩm Liên Quan</h2>
+          </div>
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/kem-duong-am.jpg"
+                  alt="Kem dưỡng"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">LANEIGE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Water Sleeping Mask EX 70ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(256)</span></div>
+                <div class="product-price">
+                  <span class="price-current">650.000đ</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/toner.jpg"
+                  alt="Toner"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">COSRX</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >AHA/BHA Clarifying Treatment Toner</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(76)</span></div>
+                <div class="product-price">
+                  <span class="price-current">320.000đ</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/serum-green-tea.jpg"
+                  alt="Serum"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">INNISFREE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html">Green Tea Seed Serum 80ml</a>
+                </h3>
+                <div class="product-rating">★★★★★ <span>(198)</span></div>
+                <div class="product-price">
+                  <span class="price-current">450.000đ</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <span class="product-badge sale">-20%</span>
+              <div class="product-image">
+                <img
+                  src="images/kem-chong-nang.jpg"
+                  alt="Sunscreen"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">ANESSA</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Perfect UV Sunscreen SPF50+</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(312)</span></div>
+                <div class="product-price">
+                  <span class="price-current">440.000đ</span>
+                  <span class="price-old">550.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer + Back to top (loaded from js/footer.js) -->
+    <div id="footer-placeholder"></div>
+    <script src="js/footer.js"></script>
+
+    <script>
+      function openTab(event, tabId) {
+        document
+          .querySelectorAll(".tab-pane")
+          .forEach((p) => p.classList.remove("active"));
+        document
+          .querySelectorAll(".tab-header button")
+          .forEach((b) => b.classList.remove("active"));
+        document.getElementById(tabId).classList.add("active");
+        event.currentTarget.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

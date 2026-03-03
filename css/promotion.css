@@ -1,0 +1,340 @@
+/* ========================================
+   HAHAHIHI - CSS KHUYẾN MÃI
+   ======================================== */
+
+.promo-hero {
+  background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-hero::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: -150px;
+  right: -100px;
+}
+
+.promo-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.promo-hero p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+.promo-hero .countdown-big {
+  display: inline-flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.countdown-big .time-unit {
+  text-align: center;
+}
+
+.countdown-big .time-box {
+  background: white;
+  color: #ef4444;
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  font-size: 32px;
+  font-weight: 800;
+  min-width: 80px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-big .time-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 6px;
+  opacity: 0.8;
+}
+
+/* Flash Sale Section */
+.flash-sale-section {
+  padding: 50px 0;
+}
+
+.flash-sale-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.flash-sale-header h2 {
+  font-size: 26px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flash-sale-header h2 .flash-icon {
+  color: #ef4444;
+  font-size: 30px;
+}
+
+/* Promo Banners Grid */
+.promo-banners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.promo-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 30px;
+  transition: var(--transition);
+}
+
+.promo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.promo-card.gradient-1 {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.promo-card.gradient-2 {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.promo-card.gradient-3 {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.promo-card.gradient-4 {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.promo-card .promo-content {
+  z-index: 1;
+}
+
+.promo-card .discount-text {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.promo-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.promo-card p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.promo-card .btn {
+  background: white;
+  color: #333;
+  padding: 10px 24px;
+  font-size: 13px;
+}
+
+/* Coupon Cards */
+.coupons-section {
+  padding: 50px 0;
+  background: white;
+}
+
+.coupons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.coupon-card {
+  display: flex;
+  border: 2px dashed var(--primary);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff5f9;
+  transition: var(--transition);
+}
+
+.coupon-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.coupon-left {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+}
+
+.coupon-left .coupon-value {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.coupon-left .coupon-type {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.coupon-right {
+  flex: 1;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coupon-right h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+}
+
+.coupon-right p {
+  font-size: 12px;
+  color: var(--text-gray);
+  margin-bottom: 10px;
+}
+
+.coupon-code-box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.coupon-code-box .code {
+  background: white;
+  border: 1px dashed var(--primary);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--primary);
+  letter-spacing: 2px;
+}
+
+.coupon-code-box .copy-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.coupon-code-box .copy-btn:hover {
+  background: var(--primary-dark);
+}
+
+/* Sale Products */
+.sale-products {
+  padding: 50px 0;
+}
+
+.sale-product-card {
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.sale-product-card .sale-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #ef4444;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  z-index: 2;
+}
+
+.sale-product-card .progress-bar {
+  margin: 0 16px 16px;
+}
+
+.progress-bar .bar {
+  height: 8px;
+  background: #fee2e2;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.progress-bar .bar .fill {
+  height: 100%;
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.progress-bar .sold-text {
+  font-size: 11px;
+  color: var(--text-light);
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .promo-hero h1 {
+    font-size: 30px;
+  }
+  .promo-banners-grid {
+    grid-template-columns: 1fr;
+  }
+  .countdown-big .time-box {
+    font-size: 24px;
+    padding: 10px 14px;
+    min-width: 60px;
+  }
+  .coupons-grid {
+    grid-template-columns: 1fr;
+  }
+  .coupon-card {
+    flex-direction: column;
+  }
+  .coupon-left {
+    min-width: auto;
+    padding: 16px;
+    flex-direction: row;
+    gap: 8px;
+  }
+}

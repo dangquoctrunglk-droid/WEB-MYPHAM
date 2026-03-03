@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh Toán - HAHAHIHI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (loaded from js/header.js) -->
+    <div id="header-placeholder"></div>
+    <script src="js/header.js"></script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+          </li>
+          <li class="separator">/</li>
+          <li class="current">Thanh toán</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Checkout Steps -->
+    <section class="checkout-steps-section">
+      <div class="container">
+        <div class="checkout-steps">
+          <div class="step completed">
+            <div class="step-icon"><i class="fas fa-shopping-cart"></i></div>
+            <span>Giỏ hàng</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step active">
+            <div class="step-icon"><i class="fas fa-credit-card"></i></div>
+            <span>Thanh toán</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+            <span>Hoàn tất</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checkout Content -->
+    <section class="checkout-section">
+      <div class="container">
+        <div class="checkout-grid">
+          <!-- Left - Form -->
+          <div class="checkout-form">
+            <!-- Shipping Info -->
+            <div class="checkout-block">
+              <h2 class="block-title">
+                <i class="fas fa-map-marker-alt"></i> Thông Tin Giao Hàng
+              </h2>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullname">Họ và tên *</label>
+                  <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Nguyễn Văn A"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Số điện thoại *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="0912 345 678"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="email@example.com"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city">Tỉnh / Thành phố *</label>
+                  <select id="city" required>
+                    <option value="">Chọn tỉnh/thành</option>
+                    <option value="hcm">TP. Hồ Chí Minh</option>
+                    <option value="hn">Hà Nội</option>
+                    <option value="dn">Đà Nẵng</option>
+                    <option value="ct">Cần Thơ</option>
+                    <option value="hp">Hải Phòng</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="district">Quận / Huyện *</label>
+                  <select id="district" required>
+                    <option value="">Chọn quận/huyện</option>
+                    <option value="q1">Quận 1</option>
+                    <option value="q3">Quận 3</option>
+                    <option value="q7">Quận 7</option>
+                    <option value="bt">Bình Thạnh</option>
+                    <option value="td">Thủ Đức</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address">Địa chỉ chi tiết *</label>
+                <input
+                  type="text"
+                  id="address"
+                  placeholder="Số nhà, tên đường, phường/xã..."
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="note">Ghi chú đơn hàng</label>
+                <textarea
+                  id="note"
+                  rows="3"
+                  placeholder="Ghi chú cho người giao hàng (nếu có)..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Shipping Method -->
+            <div class="checkout-block">
+              <h2 class="block-title">
+                <i class="fas fa-truck"></i> Phương Thức Vận Chuyển
+              </h2>
+              <div class="shipping-methods">
+                <label class="shipping-option">
+                  <input
+                    type="radio"
+                    name="shipping"
+                    value="standard"
+                    checked
+                  />
+                  <div class="option-content">
+                    <div class="option-info">
+                      <strong>Giao hàng tiêu chuẩn</strong>
+                      <span>3-5 ngày làm việc</span>
+                    </div>
+                    <div class="option-price">30.000đ</div>
+                  </div>
+                </label>
+                <label class="shipping-option">
+                  <input type="radio" name="shipping" value="express" />
+                  <div class="option-content">
+                    <div class="option-info">
+                      <strong>Giao hàng nhanh</strong>
+                      <span>1-2 ngày làm việc</span>
+                    </div>
+                    <div class="option-price">55.000đ</div>
+                  </div>
+                </label>
+                <label class="shipping-option">
+                  <input type="radio" name="shipping" value="sameday" />
+                  <div class="option-content">
+                    <div class="option-info">
+                      <strong>Giao trong ngày</strong>
+                      <span>Nội thành TP.HCM, Hà Nội</span>
+                    </div>
+                    <div class="option-price">80.000đ</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Payment Method -->
+            <div class="checkout-block">
+              <h2 class="block-title">
+                <i class="fas fa-wallet"></i> Phương Thức Thanh Toán
+              </h2>
+              <div class="payment-methods">
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="cod" checked />
+                  <div class="option-content">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <div class="option-info">
+                      <strong>Thanh toán khi nhận hàng (COD)</strong>
+                      <span>Thanh toán bằng tiền mặt khi nhận hàng</span>
+                    </div>
+                  </div>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="card" />
+                  <div class="option-content">
+                    <i class="fas fa-credit-card"></i>
+                    <div class="option-info">
+                      <strong>Thẻ tín dụng / Ghi nợ</strong>
+                      <span>Visa, Mastercard, JCB</span>
+                    </div>
+                  </div>
+                </label>
+                <div class="card-details" style="display: none">
+                  <div class="form-group">
+                    <label>Số thẻ</label>
+                    <input type="text" placeholder="1234 5678 9012 3456" />
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label>Ngày hết hạn</label>
+                      <input type="text" placeholder="MM/YY" />
+                    </div>
+                    <div class="form-group">
+                      <label>CVV</label>
+                      <input type="text" placeholder="123" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Tên trên thẻ</label>
+                    <input type="text" placeholder="NGUYEN VAN A" />
+                  </div>
+                </div>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="momo" />
+                  <div class="option-content">
+                    <i class="fas fa-mobile-alt"></i>
+                    <div class="option-info">
+                      <strong>Ví MoMo</strong>
+                      <span>Thanh toán qua ví điện tử MoMo</span>
+                    </div>
+                  </div>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="bank" />
+                  <div class="option-content">
+                    <i class="fas fa-university"></i>
+                    <div class="option-info">
+                      <strong>Chuyển khoản ngân hàng</strong>
+                      <span
+                        >Chuyển khoản qua Internet Banking hoặc QR Code</span
+                      >
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right - Order Summary -->
+          <div class="checkout-sidebar">
+            <div class="order-summary">
+              <h2 class="block-title">Đơn Hàng Của Bạn</h2>
+
+              <!-- Order Items -->
+              <div class="order-items">
+                <div class="order-item">
+                  <div class="item-image">
+                    <img
+                      src="images/serum-vitamin-c.jpg"
+                      alt="Serum"
+                    />
+                    <span class="item-qty">1</span>
+                  </div>
+                  <div class="item-info">
+                    <h4>Serum Vitamin C Suspension 23%</h4>
+                    <p>30ml</p>
+                  </div>
+                  <div class="item-price">420.000đ</div>
+                </div>
+                <div class="order-item">
+                  <div class="item-image">
+                    <img
+                      src="images/toner.jpg"
+                      alt="Toner"
+                    />
+                    <span class="item-qty">2</span>
+                  </div>
+                  <div class="item-info">
+                    <h4>AHA/BHA Clarifying Toner</h4>
+                    <p>150ml</p>
+                  </div>
+                  <div class="item-price">640.000đ</div>
+                </div>
+              </div>
+
+              <!-- Coupon -->
+              <div class="coupon-box">
+                <input type="text" placeholder="Mã giảm giá..." />
+                <button>Áp dụng</button>
+              </div>
+
+              <!-- Price Summary -->
+              <div class="price-summary">
+                <div class="price-row">
+                  <span>Tạm tính (3 sản phẩm)</span>
+                  <span>1.060.000đ</span>
+                </div>
+                <div class="price-row">
+                  <span>Phí vận chuyển</span>
+                  <span>30.000đ</span>
+                </div>
+                <div class="price-row discount">
+                  <span>Giảm giá</span>
+                  <span>-50.000đ</span>
+                </div>
+                <div class="price-row total">
+                  <span>Tổng cộng</span>
+                  <span>1.040.000đ</span>
+                </div>
+              </div>
+
+              <button class="btn-place-order">
+                <i class="fas fa-lock"></i> Đặt Hàng
+              </button>
+
+              <div class="secure-notice">
+                <i class="fas fa-shield-alt"></i>
+                <p>
+                  Thông tin của bạn được bảo mật an toàn. Chúng tôi sử dụng mã
+                  hóa SSL 256-bit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer + Back to top (loaded from js/footer.js) -->
+    <div id="footer-placeholder"></div>
+    <script src="js/footer.js"></script>
+
+    <script>
+      // Show/hide card details based on payment method
+      document.querySelectorAll('input[name="payment"]').forEach((radio) => {
+        radio.addEventListener("change", function () {
+          const cardDetails = document.querySelector(".card-details");
+          cardDetails.style.display = this.value === "card" ? "block" : "none";
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký - HAHAHIHI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (loaded from js/header.js) -->
+    <div id="header-placeholder"></div>
+    <script src="js/header.js"></script>
+
+    <!-- Auth Section -->
+    <section class="auth-section">
+      <div class="auth-container auth-container--register">
+        <!-- Left Panel - Decorative -->
+        <div class="auth-panel-left">
+          <div class="auth-panel-content">
+            <div class="auth-logo">
+              <div
+                class="logo-icon"
+                style="
+                  font-size: 24px;
+                  width: 60px;
+                  height: 60px;
+                  line-height: 60px;
+                "
+              >
+                HH
+              </div>
+            </div>
+            <h2>Tham Gia HAHAHIHI Ngay!</h2>
+            <p>
+              Tạo tài khoản để nhận ngay voucher giảm 50K cho đơn hàng đầu tiên
+              và hàng ngàn ưu đãi hấp dẫn khác.
+            </p>
+            <div class="auth-features">
+              <div class="auth-feature">
+                <i class="fas fa-gift"></i>
+                <span>Voucher 50K cho thành viên mới</span>
+              </div>
+              <div class="auth-feature">
+                <i class="fas fa-coins"></i>
+                <span>Tích điểm mỗi đơn hàng</span>
+              </div>
+              <div class="auth-feature">
+                <i class="fas fa-truck"></i>
+                <span>Miễn phí giao hàng thành viên</span>
+              </div>
+              <div class="auth-feature">
+                <i class="fas fa-star"></i>
+                <span>Ưu đãi sinh nhật độc quyền</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Panel - Form -->
+        <div class="auth-panel-right">
+          <div class="auth-form-wrapper">
+            <h2 class="auth-title">Đăng Ký</h2>
+            <p class="auth-subtitle">Tạo tài khoản mới để bắt đầu mua sắm</p>
+
+            <!-- Social Login -->
+            <div class="social-login">
+              <button class="social-btn google">
+                <i class="fab fa-google"></i>
+                <span>Google</span>
+              </button>
+              <button class="social-btn facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+              </button>
+            </div>
+
+            <div class="auth-divider">
+              <span>hoặc đăng ký bằng email</span>
+            </div>
+
+            <!-- Register Form -->
+            <form class="auth-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="lastname">Họ</label>
+                  <div class="input-icon">
+                    <i class="far fa-user"></i>
+                    <input
+                      type="text"
+                      id="lastname"
+                      placeholder="Nguyễn"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="firstname">Tên</label>
+                  <div class="input-icon">
+                    <i class="far fa-user"></i>
+                    <input
+                      type="text"
+                      id="firstname"
+                      placeholder="Văn A"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="reg-email">Email</label>
+                <div class="input-icon">
+                  <i class="far fa-envelope"></i>
+                  <input
+                    type="email"
+                    id="reg-email"
+                    placeholder="example@email.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <div class="input-icon">
+                  <i class="fas fa-phone"></i>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="0912 345 678"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="reg-password">Mật khẩu</label>
+                <div class="input-icon">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    id="reg-password"
+                    placeholder="Tối thiểu 8 ký tự..."
+                    required
+                  />
+                  <button
+                    type="button"
+                    class="toggle-password"
+                    data-target="reg-password"
+                  >
+                    <i class="far fa-eye"></i>
+                  </button>
+                </div>
+                <div class="password-strength">
+                  <div class="strength-bar">
+                    <div class="strength-fill" id="strength-fill"></div>
+                  </div>
+                  <span class="strength-text" id="strength-text"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="reg-confirm">Xác nhận mật khẩu</label>
+                <div class="input-icon">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    id="reg-confirm"
+                    placeholder="Nhập lại mật khẩu..."
+                    required
+                  />
+                  <button
+                    type="button"
+                    class="toggle-password"
+                    data-target="reg-confirm"
+                  >
+                    <i class="far fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="form-options">
+                <label class="checkbox-label">
+                  <input type="checkbox" required />
+                  <span
+                    >Tôi đồng ý với
+                    <a href="#" class="terms-link">Điều khoản dịch vụ</a> và
+                    <a href="#" class="terms-link">Chính sách bảo mật</a></span
+                  >
+                </label>
+              </div>
+
+              <button type="submit" class="auth-submit">Đăng Ký</button>
+            </form>
+
+            <p class="auth-switch">
+              Đã có tài khoản? <a href="dang-nhap.html">Đăng nhập ngay</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer + Back to top (loaded from js/footer.js) -->
+    <div id="footer-placeholder"></div>
+    <script src="js/footer.js"></script>
+
+    <script>
+      // Toggle password visibility
+      document.querySelectorAll(".toggle-password").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var targetId = this.getAttribute("data-target");
+          var input = document.getElementById(targetId);
+          var icon = this.querySelector("i");
+          if (input.type === "password") {
+            input.type = "text";
+            icon.classList.remove("fa-eye");
+            icon.classList.add("fa-eye-slash");
+          } else {
+            input.type = "password";
+            icon.classList.remove("fa-eye-slash");
+            icon.classList.add("fa-eye");
+          }
+        });
+      });
+
+      // Password strength checker
+      var passwordInput = document.getElementById("reg-password");
+      var strengthFill = document.getElementById("strength-fill");
+      var strengthText = document.getElementById("strength-text");
+
+      passwordInput.addEventListener("input", function () {
+        var val = this.value;
+        var score = 0;
+
+        if (val.length >= 8) score++;
+        if (val.length >= 12) score++;
+        if (/[a-z]/.test(val) && /[A-Z]/.test(val)) score++;
+        if (/\d/.test(val)) score++;
+        if (/[^a-zA-Z0-9]/.test(val)) score++;
+
+        var levels = [
+          { width: "0%", color: "#e0e0e0", text: "" },
+          { width: "20%", color: "#ef4444", text: "Rất yếu" },
+          { width: "40%", color: "#f97316", text: "Yếu" },
+          { width: "60%", color: "#eab308", text: "Trung bình" },
+          { width: "80%", color: "#22c55e", text: "Mạnh" },
+          { width: "100%", color: "#16a34a", text: "Rất mạnh" },
+        ];
+
+        var level = levels[score];
+        strengthFill.style.width = level.width;
+        strengthFill.style.background = level.color;
+        strengthText.textContent = level.text;
+        strengthText.style.color = level.color;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Leaf - Danh Sách Sản Phẩm - HAHAHIHI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (loaded from js/header.js) -->
+    <div id="header-placeholder"></div>
+    <script src="js/header.js"></script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+          </li>
+          <li class="separator">/</li>
+          <li><a href="danh-muc.html">Danh mục</a></li>
+          <li class="separator">/</li>
+          <li class="current">Beauty Leaf - Chăm sóc da</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="page-layout">
+        <!-- Sidebar Filter -->
+        <aside class="filter-sidebar">
+          <div class="filter-group">
+            <h3>Danh mục</h3>
+            <label><input type="checkbox" checked /> Sữa rửa mặt (24)</label>
+            <label><input type="checkbox" /> Toner (18)</label>
+            <label><input type="checkbox" /> Serum / Tinh chất (32)</label>
+            <label><input type="checkbox" /> Kem dưỡng ẩm (28)</label>
+            <label><input type="checkbox" /> Mặt nạ (15)</label>
+            <label><input type="checkbox" /> Kem chống nắng (20)</label>
+            <label><input type="checkbox" /> Tẩy trang (12)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Thương hiệu</h3>
+            <label><input type="checkbox" /> The Ordinary (15)</label>
+            <label><input type="checkbox" /> COSRX (12)</label>
+            <label><input type="checkbox" /> Laneige (18)</label>
+            <label><input type="checkbox" /> Innisfree (10)</label>
+            <label><input type="checkbox" /> La Roche-Posay (8)</label>
+            <label><input type="checkbox" /> Anessa (6)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Khoảng giá</h3>
+            <label><input type="radio" name="price" /> Dưới 200.000đ</label>
+            <label
+              ><input type="radio" name="price" /> 200.000đ - 500.000đ</label
+            >
+            <label
+              ><input type="radio" name="price" /> 500.000đ - 1.000.000đ</label
+            >
+            <label><input type="radio" name="price" /> Trên 1.000.000đ</label>
+            <div class="price-range" style="margin-top: 10px">
+              <input type="number" placeholder="Từ" />
+              <span>-</span>
+              <input type="number" placeholder="Đến" />
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Loại da</h3>
+            <label><input type="checkbox" /> Da dầu</label>
+            <label><input type="checkbox" /> Da khô</label>
+            <label><input type="checkbox" /> Da hỗn hợp</label>
+            <label><input type="checkbox" /> Da nhạy cảm</label>
+            <label><input type="checkbox" /> Mọi loại da</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Đánh giá</h3>
+            <label><input type="radio" name="rating" /> ★★★★★ (5 sao)</label>
+            <label
+              ><input type="radio" name="rating" /> ★★★★☆ (4 sao trở lên)</label
+            >
+            <label
+              ><input type="radio" name="rating" /> ★★★☆☆ (3 sao trở lên)</label
+            >
+          </div>
+
+          <button class="btn btn-primary btn-sm" style="width: 100%">
+            Áp dụng bộ lọc
+          </button>
+        </aside>
+
+        <!-- Product List -->
+        <main>
+          <!-- Sort Bar -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 24px;
+              background: white;
+              padding: 16px 20px;
+              border-radius: var(--radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <div>
+              <strong>Beauty Leaf - Chăm sóc da</strong>
+              <span style="color: var(--text-light); margin-left: 8px"
+                >(120 sản phẩm)</span
+              >
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px">
+              <span style="font-size: 13px; color: var(--text-gray)"
+                >Sắp xếp:</span
+              >
+              <select
+                style="
+                  padding: 8px 16px;
+                  border: 2px solid var(--border);
+                  border-radius: 50px;
+                  font-size: 13px;
+                  cursor: pointer;
+                "
+              >
+                <option>Phổ biến nhất</option>
+                <option>Mới nhất</option>
+                <option>Giá thấp → cao</option>
+                <option>Giá cao → thấp</option>
+                <option>Đánh giá cao nhất</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <span class="product-badge sale">-30%</span>
+              <div class="product-image">
+                <img
+                  src="images/serum-vitamin-c.jpg"
+                  alt="Serum"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">THE ORDINARY</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Serum Vitamin C 23% + HA Spheres 2%</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(128)</span></div>
+                <div class="product-price">
+                  <span class="price-current">420.000đ</span>
+                  <span class="price-old">600.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+              <span class="product-badge new">Mới</span>
+              <div class="product-image">
+                <img
+                  src="images/kem-duong-am.jpg"
+                  alt="Kem dưỡng"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">LANEIGE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Water Sleeping Mask EX 70ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(256)</span></div>
+                <div class="product-price">
+                  <span class="price-current">650.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/toner.jpg"
+                  alt="Toner"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">COSRX</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >AHA/BHA Clarifying Treatment Toner</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(76)</span></div>
+                <div class="product-price">
+                  <span class="price-current">320.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+              <span class="product-badge sale">-20%</span>
+              <div class="product-image">
+                <img
+                  src="images/kem-chong-nang.jpg"
+                  alt="Sunscreen"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">ANESSA</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Perfect UV Sunscreen Skincare Milk SPF50+</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(312)</span></div>
+                <div class="product-price">
+                  <span class="price-current">440.000đ</span>
+                  <span class="price-old">550.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/serum-green-tea.jpg"
+                  alt="Green Tea"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">INNISFREE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html">Green Tea Seed Serum 80ml</a>
+                </h3>
+                <div class="product-rating">★★★★★ <span>(198)</span></div>
+                <div class="product-price">
+                  <span class="price-current">450.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+              <span class="product-badge sale">-15%</span>
+              <div class="product-image">
+                <img
+                  src="images/mat-na.jpg"
+                  alt="Sheet mask"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">DR.JART+</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Dermask Water Jet Vital Hydra Solution</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(142)</span></div>
+                <div class="product-price">
+                  <span class="price-current">72.000đ</span>
+                  <span class="price-old">85.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <span class="active">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer + Back to top (loaded from js/footer.js) -->
+    <div id="footer-placeholder"></div>
+    <script src="js/footer.js"></script>
+  </body>
+</html>
