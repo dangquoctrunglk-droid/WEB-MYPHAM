@@ -20,6 +20,7 @@
         { href: "nuoc-hoa.html", label: "Nước hoa" },
         { href: "cham-soc-toc.html", label: "Chăm sóc tóc" },
         { href: "cham-soc-co-the.html", label: "Chăm sóc cơ thể" },
+        { href: "my-pham-organic.html", label: "Mỹ phẩm Organic" },
       ],
     },
     { href: "san-pham-moi.html", label: "Sản phẩm mới" },
@@ -36,6 +37,7 @@
     "nuoc-hoa.html",
     "cham-soc-toc.html",
     "cham-soc-co-the.html",
+    "my-pham-organic.html",
     "chi-tiet-san-pham.html",
   ];
   // Pages that should mark "Tuyển dụng" as active

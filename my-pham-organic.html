@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mỹ Phẩm Organic - HAHAHIHI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (loaded from js/header.js) -->
+    <div id="header-placeholder"></div>
+    <script src="js/header.js"></script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+          </li>
+          <li class="separator">/</li>
+          <li><a href="danh-muc.html">Danh mục</a></li>
+          <li class="separator">/</li>
+          <li class="current">Mỹ phẩm Organic</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="page-layout">
+        <!-- Sidebar Filter -->
+        <aside class="filter-sidebar">
+          <div class="filter-group">
+            <h3>Danh mục</h3>
+            <label
+              ><input type="checkbox" checked /> Chăm sóc da organic (18)</label
+            >
+            <label><input type="checkbox" /> Trang điểm organic (12)</label>
+            <label><input type="checkbox" /> Dầu thiên nhiên (10)</label>
+            <label><input type="checkbox" /> Mặt nạ thiên nhiên (8)</label>
+            <label><input type="checkbox" /> Dưỡng thể organic (14)</label>
+            <label><input type="checkbox" /> Chăm sóc tóc organic (6)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Thương hiệu</h3>
+            <label><input type="checkbox" /> Cocoon (14)</label>
+            <label><input type="checkbox" /> Herbivore (10)</label>
+            <label><input type="checkbox" /> Klairs (12)</label>
+            <label><input type="checkbox" /> Juicy Chemistry (8)</label>
+            <label><input type="checkbox" /> Skin1004 (11)</label>
+            <label><input type="checkbox" /> Aromatica (9)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Khoảng giá</h3>
+            <label><input type="radio" name="price" /> Dưới 200.000đ</label>
+            <label
+              ><input type="radio" name="price" /> 200.000đ - 500.000đ</label
+            >
+            <label
+              ><input type="radio" name="price" /> 500.000đ - 1.000.000đ</label
+            >
+            <label><input type="radio" name="price" /> Trên 1.000.000đ</label>
+            <div class="price-range" style="margin-top: 10px">
+              <input type="number" placeholder="Từ" />
+              <span>-</span>
+              <input type="number" placeholder="Đến" />
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Chứng nhận</h3>
+            <label><input type="checkbox" /> USDA Organic</label>
+            <label><input type="checkbox" /> Ecocert</label>
+            <label><input type="checkbox" /> Vegan / Thuần chay</label>
+            <label><input type="checkbox" /> Cruelty-free</label>
+            <label><input type="checkbox" /> Clean Beauty</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Đánh giá</h3>
+            <label><input type="radio" name="rating" /> ★★★★★ (5 sao)</label>
+            <label
+              ><input type="radio" name="rating" /> ★★★★☆ (4 sao trở lên)</label
+            >
+            <label
+              ><input type="radio" name="rating" /> ★★★☆☆ (3 sao trở lên)</label
+            >
+          </div>
+
+          <button class="btn btn-primary btn-sm" style="width: 100%">
+            Áp dụng bộ lọc
+          </button>
+        </aside>
+
+        <!-- Product List -->
+        <main>
+          <!-- Sort Bar -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 24px;
+              background: white;
+              padding: 16px 20px;
+              border-radius: var(--radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <div>
+              <strong>Mỹ phẩm Organic</strong>
+              <span style="color: var(--text-light); margin-left: 8px"
+                >(60 sản phẩm)</span
+              >
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px">
+              <span style="font-size: 13px; color: var(--text-gray)"
+                >Sắp xếp:</span
+              >
+              <select
+                style="
+                  padding: 8px 16px;
+                  border: 2px solid var(--border);
+                  border-radius: 50px;
+                  font-size: 13px;
+                  cursor: pointer;
+                "
+              >
+                <option>Phổ biến nhất</option>
+                <option>Mới nhất</option>
+                <option>Giá thấp → cao</option>
+                <option>Giá cao → thấp</option>
+                <option>Đánh giá cao nhất</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <span class="product-badge sale">-20%</span>
+              <div class="product-image">
+                <img
+                  src="images/organic-cocoon-dau-dua.jpg"
+                  alt="Cocoon Dầu dừa"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">COCOON</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Dầu Dừa Bến Tre Tinh Khiết 100ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(234)</span></div>
+                <div class="product-price">
+                  <span class="price-current">152.000đ</span>
+                  <span class="price-old">190.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+              <span class="product-badge new">Mới</span>
+              <div class="product-image">
+                <img
+                  src="images/organic-herbivore-serum.jpg"
+                  alt="Herbivore Serum"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">HERBIVORE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Lapis Blue Tansy Face Oil 30ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(187)</span></div>
+                <div class="product-price">
+                  <span class="price-current">1.250.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/organic-klairs-toner.jpg" alt="Klairs Toner" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">KLAIRS</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Supple Preparation Unscented Toner 180ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(342)</span></div>
+                <div class="product-price">
+                  <span class="price-current">380.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+              <span class="product-badge sale">-25%</span>
+              <div class="product-image">
+                <img
+                  src="images/organic-skin1004-centella.jpg"
+                  alt="Skin1004 Centella"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">SKIN1004</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Madagascar Centella Ampoule 100ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(456)</span></div>
+                <div class="product-price">
+                  <span class="price-current">345.000đ</span>
+                  <span class="price-old">460.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/organic-aromatica-rosemary.jpg"
+                  alt="Aromatica Rosemary"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">AROMATICA</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Rosemary Scalp Scaling Shampoo 400ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(289)</span></div>
+                <div class="product-price">
+                  <span class="price-current">420.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+              <span class="product-badge sale">-15%</span>
+              <div class="product-image">
+                <img
+                  src="images/organic-juicy-oil.jpg"
+                  alt="Juicy Chemistry Oil"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">JUICY CHEMISTRY</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Rosehip & Sea Buckthorn Face Oil 10ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(176)</span></div>
+                <div class="product-price">
+                  <span class="price-current">520.000đ</span>
+                  <span class="price-old">612.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <span class="active">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer + Back to top (loaded from js/footer.js) -->
+    <div id="footer-placeholder"></div>
+    <script src="js/footer.js"></script>
+  </body>
+</html>
