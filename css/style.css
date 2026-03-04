@@ -1243,6 +1243,7 @@ textarea {
   .categories-grid.grid-4,
   .categories-grid.grid-6 {
     grid-template-columns: repeat(2, 1fr);
+    display: grid;
   }
 }
 
