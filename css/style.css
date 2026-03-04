@@ -473,6 +473,19 @@ textarea {
   gap: 20px;
 }
 
+.categories-grid.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.categories-grid.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.categories-grid.grid-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
 .category-card {
   background: white;
   border-radius: var(--radius);
@@ -1179,6 +1192,11 @@ textarea {
     flex-wrap: wrap;
     gap: 12px;
   }
+  .header-actions {
+    order: 2;
+    width: 100%;
+    justify-content: space-around;
+  }
   .search-bar {
     order: 3;
     max-width: 100%;
@@ -1221,14 +1239,16 @@ textarea {
   .newsletter-form {
     flex-direction: column;
   }
+  .categories-grid.grid-3,
+  .categories-grid.grid-4,
+  .categories-grid.grid-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 480px) {
   .products-grid {
     grid-template-columns: 1fr;
-  }
-  .categories-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
   .hero-text h1 {
     font-size: 26px;
