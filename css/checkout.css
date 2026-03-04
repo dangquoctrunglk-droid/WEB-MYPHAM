@@ -163,14 +163,16 @@
 .shipping-option {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   padding: 16px 20px;
   border: 2px solid var(--border);
   border-radius: var(--radius-sm);
   cursor: pointer;
   transition: var(--transition);
 }
-
+.option-content {
+  margin-left: 12px;
+}
 .shipping-option:hover,
 .shipping-option.active {
   border-color: var(--primary);
