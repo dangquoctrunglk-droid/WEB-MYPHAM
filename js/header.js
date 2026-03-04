@@ -16,10 +16,10 @@
       label: "Danh mục",
       dropdown: [
         { href: "san-pham.html", label: "Chăm sóc da" },
-        { href: "san-pham.html", label: "Trang điểm" },
-        { href: "san-pham.html", label: "Nước hoa" },
-        { href: "san-pham.html", label: "Chăm sóc tóc" },
-        { href: "san-pham.html", label: "Chăm sóc cơ thể" },
+        { href: "trang-diem.html", label: "Trang điểm" },
+        { href: "nuoc-hoa.html", label: "Nước hoa" },
+        { href: "cham-soc-toc.html", label: "Chăm sóc tóc" },
+        { href: "cham-soc-co-the.html", label: "Chăm sóc cơ thể" },
       ],
     },
     { href: "san-pham-moi.html", label: "Sản phẩm mới" },
@@ -32,6 +32,10 @@
   var danhMucPages = [
     "danh-muc.html",
     "san-pham.html",
+    "trang-diem.html",
+    "nuoc-hoa.html",
+    "cham-soc-toc.html",
+    "cham-soc-co-the.html",
     "chi-tiet-san-pham.html",
   ];
   // Pages that should mark "Tuyển dụng" as active

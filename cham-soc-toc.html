@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chăm Sóc Tóc - HAHAHIHI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (loaded from js/header.js) -->
+    <div id="header-placeholder"></div>
+    <script src="js/header.js"></script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+          </li>
+          <li class="separator">/</li>
+          <li><a href="danh-muc.html">Danh mục</a></li>
+          <li class="separator">/</li>
+          <li class="current">Chăm sóc tóc</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="page-layout">
+        <!-- Sidebar Filter -->
+        <aside class="filter-sidebar">
+          <div class="filter-group">
+            <h3>Danh mục</h3>
+            <label><input type="checkbox" checked /> Dầu gội (22)</label>
+            <label><input type="checkbox" /> Dầu xả (18)</label>
+            <label><input type="checkbox" /> Ủ tóc / Hair mask (14)</label>
+            <label><input type="checkbox" /> Serum dưỡng tóc (16)</label>
+            <label><input type="checkbox" /> Tinh dầu tóc (10)</label>
+            <label><input type="checkbox" /> Xịt dưỡng tóc (8)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Thương hiệu</h3>
+            <label><input type="checkbox" /> Moroccanoil (10)</label>
+            <label><input type="checkbox" /> L'Oréal Professionnel (14)</label>
+            <label><input type="checkbox" /> Tsubaki (12)</label>
+            <label><input type="checkbox" /> Dove (8)</label>
+            <label><input type="checkbox" /> Olaplex (9)</label>
+            <label><input type="checkbox" /> Mise en scène (11)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Khoảng giá</h3>
+            <label><input type="radio" name="price" /> Dưới 200.000đ</label>
+            <label
+              ><input type="radio" name="price" /> 200.000đ - 500.000đ</label
+            >
+            <label
+              ><input type="radio" name="price" /> 500.000đ - 1.000.000đ</label
+            >
+            <label><input type="radio" name="price" /> Trên 1.000.000đ</label>
+            <div class="price-range" style="margin-top: 10px">
+              <input type="number" placeholder="Từ" />
+              <span>-</span>
+              <input type="number" placeholder="Đến" />
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Loại tóc</h3>
+            <label><input type="checkbox" /> Tóc dầu</label>
+            <label><input type="checkbox" /> Tóc khô xơ</label>
+            <label><input type="checkbox" /> Tóc nhuộm</label>
+            <label><input type="checkbox" /> Tóc hư tổn</label>
+            <label><input type="checkbox" /> Mọi loại tóc</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Đánh giá</h3>
+            <label><input type="radio" name="rating" /> ★★★★★ (5 sao)</label>
+            <label
+              ><input type="radio" name="rating" /> ★★★★☆ (4 sao trở lên)</label
+            >
+            <label
+              ><input type="radio" name="rating" /> ★★★☆☆ (3 sao trở lên)</label
+            >
+          </div>
+
+          <button class="btn btn-primary btn-sm" style="width: 100%">
+            Áp dụng bộ lọc
+          </button>
+        </aside>
+
+        <!-- Product List -->
+        <main>
+          <!-- Sort Bar -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 24px;
+              background: white;
+              padding: 16px 20px;
+              border-radius: var(--radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <div>
+              <strong>Chăm sóc tóc</strong>
+              <span style="color: var(--text-light); margin-left: 8px"
+                >(78 sản phẩm)</span
+              >
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px">
+              <span style="font-size: 13px; color: var(--text-gray)"
+                >Sắp xếp:</span
+              >
+              <select
+                style="
+                  padding: 8px 16px;
+                  border: 2px solid var(--border);
+                  border-radius: 50px;
+                  font-size: 13px;
+                  cursor: pointer;
+                "
+              >
+                <option>Phổ biến nhất</option>
+                <option>Mới nhất</option>
+                <option>Giá thấp → cao</option>
+                <option>Giá cao → thấp</option>
+                <option>Đánh giá cao nhất</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <span class="product-badge sale">-25%</span>
+              <div class="product-image">
+                <img
+                  src="images/dau-duong-moroccanoil.jpg"
+                  alt="Moroccanoil Treatment"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">MOROCCANOIL</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html">Treatment Original 100ml</a>
+                </h3>
+                <div class="product-rating">★★★★★ <span>(287)</span></div>
+                <div class="product-price">
+                  <span class="price-current">680.000đ</span>
+                  <span class="price-old">900.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+              <span class="product-badge new">Mới</span>
+              <div class="product-image">
+                <img src="images/dau-goi-loreal.jpg" alt="L'Oréal Shampoo" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">L'ORÉAL PROFESSIONNEL</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Serie Expert Absolut Repair Shampoo 300ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(176)</span></div>
+                <div class="product-price">
+                  <span class="price-current">420.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/u-toc-tsubaki.jpg" alt="Tsubaki Hair Mask" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">TSUBAKI</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Premium Repair Hair Mask 180g</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(342)</span></div>
+                <div class="product-price">
+                  <span class="price-current">250.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+              <span class="product-badge sale">-20%</span>
+              <div class="product-image">
+                <img src="images/olaplex-no3.jpg" alt="Olaplex No.3" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">OLAPLEX</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html">No.3 Hair Perfector 100ml</a>
+                </h3>
+                <div class="product-rating">★★★★★ <span>(198)</span></div>
+                <div class="product-price">
+                  <span class="price-current">560.000đ</span>
+                  <span class="price-old">700.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/dau-goi-dove.jpg" alt="Dove Shampoo" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">DOVE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Intensive Repair Shampoo 640ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(456)</span></div>
+                <div class="product-price">
+                  <span class="price-current">135.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+              <span class="product-badge sale">-15%</span>
+              <div class="product-image">
+                <img
+                  src="images/serum-toc-mise.jpg"
+                  alt="Mise en scène Serum"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">MISE EN SCÈNE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Perfect Serum Original 80ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(523)</span></div>
+                <div class="product-price">
+                  <span class="price-current">160.000đ</span>
+                  <span class="price-old">189.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <span class="active">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer + Back to top (loaded from js/footer.js) -->
+    <div id="footer-placeholder"></div>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

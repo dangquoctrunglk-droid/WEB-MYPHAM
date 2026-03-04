@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nước Hoa - HAHAHIHI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (loaded from js/header.js) -->
+    <div id="header-placeholder"></div>
+    <script src="js/header.js"></script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+          </li>
+          <li class="separator">/</li>
+          <li><a href="danh-muc.html">Danh mục</a></li>
+          <li class="separator">/</li>
+          <li class="current">Nước hoa</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="page-layout">
+        <!-- Sidebar Filter -->
+        <aside class="filter-sidebar">
+          <div class="filter-group">
+            <h3>Danh mục</h3>
+            <label><input type="checkbox" checked /> Nước hoa nữ (30)</label>
+            <label><input type="checkbox" /> Nước hoa nam (25)</label>
+            <label><input type="checkbox" /> Nước hoa unisex (15)</label>
+            <label><input type="checkbox" /> Nước hoa mini (20)</label>
+            <label><input type="checkbox" /> Body mist (18)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Thương hiệu</h3>
+            <label><input type="checkbox" /> Chanel (12)</label>
+            <label><input type="checkbox" /> Dior (15)</label>
+            <label><input type="checkbox" /> Jo Malone (10)</label>
+            <label><input type="checkbox" /> Versace (8)</label>
+            <label><input type="checkbox" /> Gucci (9)</label>
+            <label><input type="checkbox" /> YSL (11)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Khoảng giá</h3>
+            <label><input type="radio" name="price" /> Dưới 500.000đ</label>
+            <label
+              ><input type="radio" name="price" /> 500.000đ - 1.500.000đ</label
+            >
+            <label
+              ><input type="radio" name="price" /> 1.500.000đ -
+              3.000.000đ</label
+            >
+            <label><input type="radio" name="price" /> Trên 3.000.000đ</label>
+            <div class="price-range" style="margin-top: 10px">
+              <input type="number" placeholder="Từ" />
+              <span>-</span>
+              <input type="number" placeholder="Đến" />
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Nhóm hương</h3>
+            <label><input type="checkbox" /> Hương hoa (Floral)</label>
+            <label><input type="checkbox" /> Hương gỗ (Woody)</label>
+            <label><input type="checkbox" /> Hương trái cây (Fruity)</label>
+            <label
+              ><input type="checkbox" /> Hương phương đông (Oriental)</label
+            >
+            <label><input type="checkbox" /> Hương tươi mát (Fresh)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Đánh giá</h3>
+            <label><input type="radio" name="rating" /> ★★★★★ (5 sao)</label>
+            <label
+              ><input type="radio" name="rating" /> ★★★★☆ (4 sao trở lên)</label
+            >
+            <label
+              ><input type="radio" name="rating" /> ★★★☆☆ (3 sao trở lên)</label
+            >
+          </div>
+
+          <button class="btn btn-primary btn-sm" style="width: 100%">
+            Áp dụng bộ lọc
+          </button>
+        </aside>
+
+        <!-- Product List -->
+        <main>
+          <!-- Sort Bar -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 24px;
+              background: white;
+              padding: 16px 20px;
+              border-radius: var(--radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <div>
+              <strong>Nước hoa</strong>
+              <span style="color: var(--text-light); margin-left: 8px"
+                >(85 sản phẩm)</span
+              >
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px">
+              <span style="font-size: 13px; color: var(--text-gray)"
+                >Sắp xếp:</span
+              >
+              <select
+                style="
+                  padding: 8px 16px;
+                  border: 2px solid var(--border);
+                  border-radius: 50px;
+                  font-size: 13px;
+                  cursor: pointer;
+                "
+              >
+                <option>Phổ biến nhất</option>
+                <option>Mới nhất</option>
+                <option>Giá thấp → cao</option>
+                <option>Giá cao → thấp</option>
+                <option>Đánh giá cao nhất</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <span class="product-badge sale">-20%</span>
+              <div class="product-image">
+                <img src="images/nuoc-hoa-chanel.jpg" alt="Chanel No.5" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">CHANEL</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html">N°5 Eau de Parfum 100ml</a>
+                </h3>
+                <div class="product-rating">★★★★★ <span>(456)</span></div>
+                <div class="product-price">
+                  <span class="price-current">2.800.000đ</span>
+                  <span class="price-old">3.500.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+              <span class="product-badge new">Mới</span>
+              <div class="product-image">
+                <img src="images/nuoc-hoa-dior.jpg" alt="Dior Sauvage" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">DIOR</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Sauvage Eau de Toilette 100ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(389)</span></div>
+                <div class="product-price">
+                  <span class="price-current">2.650.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/nuoc-hoa-jomalone.jpg" alt="Jo Malone" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">JO MALONE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >English Pear & Freesia Cologne 100ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(198)</span></div>
+                <div class="product-price">
+                  <span class="price-current">3.200.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+              <span class="product-badge sale">-15%</span>
+              <div class="product-image">
+                <img
+                  src="images/nuoc-hoa-versace.jpg"
+                  alt="Versace Bright Crystal"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">VERSACE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Bright Crystal Eau de Toilette 90ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(267)</span></div>
+                <div class="product-price">
+                  <span class="price-current">1.700.000đ</span>
+                  <span class="price-old">2.000.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/nuoc-hoa-gucci.jpg" alt="Gucci Bloom" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">GUCCI</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html">Bloom Eau de Parfum 100ml</a>
+                </h3>
+                <div class="product-rating">★★★★★ <span>(312)</span></div>
+                <div class="product-price">
+                  <span class="price-current">2.450.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+              <span class="product-badge sale">-30%</span>
+              <div class="product-image">
+                <img src="images/nuoc-hoa-ysl.jpg" alt="YSL Black Opium" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">YSL</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Black Opium Eau de Parfum 90ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(534)</span></div>
+                <div class="product-price">
+                  <span class="price-current">2.100.000đ</span>
+                  <span class="price-old">3.000.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <span class="active">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer + Back to top (loaded from js/footer.js) -->
+    <div id="footer-placeholder"></div>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

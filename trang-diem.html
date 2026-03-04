@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Điểm - HAHAHIHI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (loaded from js/header.js) -->
+    <div id="header-placeholder"></div>
+    <script src="js/header.js"></script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+          </li>
+          <li class="separator">/</li>
+          <li><a href="danh-muc.html">Danh mục</a></li>
+          <li class="separator">/</li>
+          <li class="current">Trang điểm</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="page-layout">
+        <!-- Sidebar Filter -->
+        <aside class="filter-sidebar">
+          <div class="filter-group">
+            <h3>Danh mục</h3>
+            <label
+              ><input type="checkbox" checked /> Kem nền / Foundation
+              (20)</label
+            >
+            <label><input type="checkbox" /> Phấn phủ (15)</label>
+            <label><input type="checkbox" /> Son môi (35)</label>
+            <label><input type="checkbox" /> Mascara (12)</label>
+            <label><input type="checkbox" /> Kẻ mắt / Eyeliner (18)</label>
+            <label><input type="checkbox" /> Phấn mắt (22)</label>
+            <label><input type="checkbox" /> Má hồng / Blush (10)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Thương hiệu</h3>
+            <label><input type="checkbox" /> MAC (18)</label>
+            <label><input type="checkbox" /> Maybelline (22)</label>
+            <label><input type="checkbox" /> L'Oréal (15)</label>
+            <label><input type="checkbox" /> 3CE (20)</label>
+            <label><input type="checkbox" /> Romand (16)</label>
+            <label><input type="checkbox" /> Charlotte Tilbury (10)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Khoảng giá</h3>
+            <label><input type="radio" name="price" /> Dưới 200.000đ</label>
+            <label
+              ><input type="radio" name="price" /> 200.000đ - 500.000đ</label
+            >
+            <label
+              ><input type="radio" name="price" /> 500.000đ - 1.000.000đ</label
+            >
+            <label><input type="radio" name="price" /> Trên 1.000.000đ</label>
+            <div class="price-range" style="margin-top: 10px">
+              <input type="number" placeholder="Từ" />
+              <span>-</span>
+              <input type="number" placeholder="Đến" />
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Loại da</h3>
+            <label><input type="checkbox" /> Da dầu</label>
+            <label><input type="checkbox" /> Da khô</label>
+            <label><input type="checkbox" /> Da hỗn hợp</label>
+            <label><input type="checkbox" /> Da nhạy cảm</label>
+            <label><input type="checkbox" /> Mọi loại da</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Đánh giá</h3>
+            <label><input type="radio" name="rating" /> ★★★★★ (5 sao)</label>
+            <label
+              ><input type="radio" name="rating" /> ★★★★☆ (4 sao trở lên)</label
+            >
+            <label
+              ><input type="radio" name="rating" /> ★★★☆☆ (3 sao trở lên)</label
+            >
+          </div>
+
+          <button class="btn btn-primary btn-sm" style="width: 100%">
+            Áp dụng bộ lọc
+          </button>
+        </aside>
+
+        <!-- Product List -->
+        <main>
+          <!-- Sort Bar -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 24px;
+              background: white;
+              padding: 16px 20px;
+              border-radius: var(--radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <div>
+              <strong>Trang điểm</strong>
+              <span style="color: var(--text-light); margin-left: 8px"
+                >(96 sản phẩm)</span
+              >
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px">
+              <span style="font-size: 13px; color: var(--text-gray)"
+                >Sắp xếp:</span
+              >
+              <select
+                style="
+                  padding: 8px 16px;
+                  border: 2px solid var(--border);
+                  border-radius: 50px;
+                  font-size: 13px;
+                  cursor: pointer;
+                "
+              >
+                <option>Phổ biến nhất</option>
+                <option>Mới nhất</option>
+                <option>Giá thấp → cao</option>
+                <option>Giá cao → thấp</option>
+                <option>Đánh giá cao nhất</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <span class="product-badge sale">-25%</span>
+              <div class="product-image">
+                <img src="images/son-mac.jpg" alt="Son MAC" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">MAC</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Retro Matte Lipstick - Ruby Woo</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(342)</span></div>
+                <div class="product-price">
+                  <span class="price-current">480.000đ</span>
+                  <span class="price-old">640.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+              <span class="product-badge new">Mới</span>
+              <div class="product-image">
+                <img src="images/kem-nen-loreal.jpg" alt="Kem nền L'Oréal" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">L'ORÉAL</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >True Match Super-Blendable Foundation</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(215)</span></div>
+                <div class="product-price">
+                  <span class="price-current">350.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/mascara-maybelline.jpg"
+                  alt="Mascara Maybelline"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">MAYBELLINE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Lash Sensational Sky High Mascara</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(189)</span></div>
+                <div class="product-price">
+                  <span class="price-current">220.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+              <span class="product-badge sale">-20%</span>
+              <div class="product-image">
+                <img src="images/phan-mat-3ce.jpg" alt="Phấn mắt 3CE" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">3CE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Multi Eye Color Palette - Overtake</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(276)</span></div>
+                <div class="product-price">
+                  <span class="price-current">520.000đ</span>
+                  <span class="price-old">650.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/son-romand.jpg" alt="Son Romand" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">ROMAND</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Juicy Lasting Tint #13 Eat Dotori</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(405)</span></div>
+                <div class="product-price">
+                  <span class="price-current">185.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+              <span class="product-badge sale">-15%</span>
+              <div class="product-image">
+                <img
+                  src="images/phan-phu-innisfree.jpg"
+                  alt="Phấn phủ Innisfree"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">INNISFREE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >No Sebum Mineral Powder 5g</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(523)</span></div>
+                <div class="product-price">
+                  <span class="price-current">140.000đ</span>
+                  <span class="price-old">165.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <span class="active">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer + Back to top (loaded from js/footer.js) -->
+    <div id="footer-placeholder"></div>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

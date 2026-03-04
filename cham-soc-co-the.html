@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chăm Sóc Cơ Thể - HAHAHIHI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (loaded from js/header.js) -->
+    <div id="header-placeholder"></div>
+    <script src="js/header.js"></script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+          </li>
+          <li class="separator">/</li>
+          <li><a href="danh-muc.html">Danh mục</a></li>
+          <li class="separator">/</li>
+          <li class="current">Chăm sóc cơ thể</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="page-layout">
+        <!-- Sidebar Filter -->
+        <aside class="filter-sidebar">
+          <div class="filter-group">
+            <h3>Danh mục</h3>
+            <label><input type="checkbox" checked /> Sữa tắm (20)</label>
+            <label
+              ><input type="checkbox" /> Dưỡng thể / Body lotion (25)</label
+            >
+            <label><input type="checkbox" /> Tẩy tế bào chết body (12)</label>
+            <label><input type="checkbox" /> Kem chống nắng body (10)</label>
+            <label><input type="checkbox" /> Xịt thơm body (15)</label>
+            <label><input type="checkbox" /> Kem tay & chân (8)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Thương hiệu</h3>
+            <label><input type="checkbox" /> Vaseline (10)</label>
+            <label><input type="checkbox" /> Nivea (12)</label>
+            <label><input type="checkbox" /> The Body Shop (14)</label>
+            <label><input type="checkbox" /> Dove (8)</label>
+            <label><input type="checkbox" /> Cetaphil (9)</label>
+            <label><input type="checkbox" /> Bath & Body Works (11)</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Khoảng giá</h3>
+            <label><input type="radio" name="price" /> Dưới 200.000đ</label>
+            <label
+              ><input type="radio" name="price" /> 200.000đ - 500.000đ</label
+            >
+            <label
+              ><input type="radio" name="price" /> 500.000đ - 1.000.000đ</label
+            >
+            <label><input type="radio" name="price" /> Trên 1.000.000đ</label>
+            <div class="price-range" style="margin-top: 10px">
+              <input type="number" placeholder="Từ" />
+              <span>-</span>
+              <input type="number" placeholder="Đến" />
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Loại da</h3>
+            <label><input type="checkbox" /> Da dầu</label>
+            <label><input type="checkbox" /> Da khô</label>
+            <label><input type="checkbox" /> Da nhạy cảm</label>
+            <label><input type="checkbox" /> Mọi loại da</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>Đánh giá</h3>
+            <label><input type="radio" name="rating" /> ★★★★★ (5 sao)</label>
+            <label
+              ><input type="radio" name="rating" /> ★★★★☆ (4 sao trở lên)</label
+            >
+            <label
+              ><input type="radio" name="rating" /> ★★★☆☆ (3 sao trở lên)</label
+            >
+          </div>
+
+          <button class="btn btn-primary btn-sm" style="width: 100%">
+            Áp dụng bộ lọc
+          </button>
+        </aside>
+
+        <!-- Product List -->
+        <main>
+          <!-- Sort Bar -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 24px;
+              background: white;
+              padding: 16px 20px;
+              border-radius: var(--radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <div>
+              <strong>Chăm sóc cơ thể</strong>
+              <span style="color: var(--text-light); margin-left: 8px"
+                >(72 sản phẩm)</span
+              >
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px">
+              <span style="font-size: 13px; color: var(--text-gray)"
+                >Sắp xếp:</span
+              >
+              <select
+                style="
+                  padding: 8px 16px;
+                  border: 2px solid var(--border);
+                  border-radius: 50px;
+                  font-size: 13px;
+                  cursor: pointer;
+                "
+              >
+                <option>Phổ biến nhất</option>
+                <option>Mới nhất</option>
+                <option>Giá thấp → cao</option>
+                <option>Giá cao → thấp</option>
+                <option>Đánh giá cao nhất</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <span class="product-badge sale">-30%</span>
+              <div class="product-image">
+                <img
+                  src="images/duong-the-vaseline.jpg"
+                  alt="Vaseline Body Lotion"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">VASELINE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Healthy Bright UV Extra Brightening 725ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(567)</span></div>
+                <div class="product-price">
+                  <span class="price-current">145.000đ</span>
+                  <span class="price-old">207.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+              <span class="product-badge new">Mới</span>
+              <div class="product-image">
+                <img src="images/sua-tam-dove.jpg" alt="Dove Body Wash" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">DOVE</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Deeply Nourishing Body Wash 900g</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(423)</span></div>
+                <div class="product-price">
+                  <span class="price-current">185.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/tay-da-chet-bodyshop.jpg"
+                  alt="The Body Shop Scrub"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">THE BODY SHOP</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >British Rose Exfoliating Gel Body Scrub 250ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(198)</span></div>
+                <div class="product-price">
+                  <span class="price-current">450.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+              <span class="product-badge sale">-20%</span>
+              <div class="product-image">
+                <img src="images/duong-the-nivea.jpg" alt="Nivea Body Lotion" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">NIVEA</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Extra White Repair & Protect SPF30 350ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(312)</span></div>
+                <div class="product-price">
+                  <span class="price-current">128.000đ</span>
+                  <span class="price-old">160.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/sua-tam-cetaphil.jpg"
+                  alt="Cetaphil Body Wash"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">CETAPHIL</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Gentle Skin Cleanser 500ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(634)</span></div>
+                <div class="product-price">
+                  <span class="price-current">320.000đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+              <span class="product-badge sale">-15%</span>
+              <div class="product-image">
+                <img
+                  src="images/xit-thom-bbw.jpg"
+                  alt="Bath & Body Works Mist"
+                />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">BATH & BODY WORKS</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Japanese Cherry Blossom Fine Fragrance Mist 236ml</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(389)</span></div>
+                <div class="product-price">
+                  <span class="price-current">350.000đ</span>
+                  <span class="price-old">412.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <span class="active">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer + Back to top (loaded from js/footer.js) -->
+    <div id="footer-placeholder"></div>
+    <script src="js/footer.js"></script>
+  </body>
+</html>
