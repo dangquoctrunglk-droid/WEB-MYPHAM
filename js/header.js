@@ -106,7 +106,7 @@
     '                <i class="far fa-user"></i>\n' +
     "                <span>Tài khoản</span>\n" +
     "            </a>\n" +
-    '            <a href="#" class="header-action">\n' +
+    '            <a href="yeu-thich.html" class="header-action">\n' +
     '                <i class="far fa-heart"></i>\n' +
     "                <span>Yêu thích</span>\n" +
     '                <div class="badge">3</div>\n' +

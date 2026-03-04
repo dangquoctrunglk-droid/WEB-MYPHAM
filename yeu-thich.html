@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản Phẩm Yêu Thích - HAHAHIHI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/wishlist.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (loaded from js/header.js) -->
+    <div id="header-placeholder"></div>
+    <script src="js/header.js"></script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+          </li>
+          <li class="separator">/</li>
+          <li class="current">Sản phẩm yêu thích</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Wishlist Content -->
+    <section class="wishlist-section">
+      <div class="container">
+        <div class="wishlist-header">
+          <h1><i class="fas fa-heart"></i> Sản Phẩm Yêu Thích</h1>
+          <p>Bạn có <strong>3 sản phẩm</strong> trong danh sách yêu thích</p>
+        </div>
+
+        <!-- Wishlist Actions Bar -->
+        <div class="wishlist-actions-bar">
+          <div class="wishlist-sort">
+            <span>Sắp xếp:</span>
+            <select>
+              <option>Mới thêm nhất</option>
+              <option>Giá thấp → cao</option>
+              <option>Giá cao → thấp</option>
+              <option>Tên A-Z</option>
+            </select>
+          </div>
+          <button class="btn btn-outline btn-sm">
+            <i class="fas fa-cart-plus"></i> Thêm tất cả vào giỏ
+          </button>
+        </div>
+
+        <!-- Wishlist Items -->
+        <div class="wishlist-list">
+          <!-- Item 1 -->
+          <div class="wishlist-item">
+            <div class="wishlist-item-image">
+              <a href="chi-tiet-san-pham.html">
+                <img src="images/serum-vitamin-c.jpg" alt="Serum Vitamin C" />
+              </a>
+            </div>
+            <div class="wishlist-item-info">
+              <p class="wishlist-item-brand">THE ORDINARY</p>
+              <h3 class="wishlist-item-name">
+                <a href="chi-tiet-san-pham.html"
+                  >Serum Vitamin C 23% + HA Spheres 2%</a
+                >
+              </h3>
+              <div class="wishlist-item-rating">★★★★★ <span>(128)</span></div>
+              <div class="wishlist-item-meta">
+                <span class="wishlist-item-category"
+                  ><i class="fas fa-tag"></i> Chăm sóc da</span
+                >
+                <span class="wishlist-item-date"
+                  ><i class="far fa-clock"></i> Đã thêm 2 ngày trước</span
+                >
+              </div>
+            </div>
+            <div class="wishlist-item-price">
+              <span class="price-current">420.000đ</span>
+              <span class="price-old">600.000đ</span>
+              <span class="wishlist-discount">-30%</span>
+            </div>
+            <div class="wishlist-item-status">
+              <span class="in-stock"
+                ><i class="fas fa-check-circle"></i> Còn hàng</span
+              >
+            </div>
+            <div class="wishlist-item-actions">
+              <button class="btn btn-primary btn-sm">
+                <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+              </button>
+              <button class="btn-remove" title="Xóa khỏi yêu thích">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="wishlist-item">
+            <div class="wishlist-item-image">
+              <a href="chi-tiet-san-pham.html">
+                <img src="images/kem-duong-am.jpg" alt="Kem dưỡng ẩm Laneige" />
+              </a>
+            </div>
+            <div class="wishlist-item-info">
+              <p class="wishlist-item-brand">LANEIGE</p>
+              <h3 class="wishlist-item-name">
+                <a href="chi-tiet-san-pham.html">Water Sleeping Mask EX 70ml</a>
+              </h3>
+              <div class="wishlist-item-rating">★★★★★ <span>(256)</span></div>
+              <div class="wishlist-item-meta">
+                <span class="wishlist-item-category"
+                  ><i class="fas fa-tag"></i> Chăm sóc da</span
+                >
+                <span class="wishlist-item-date"
+                  ><i class="far fa-clock"></i> Đã thêm 5 ngày trước</span
+                >
+              </div>
+            </div>
+            <div class="wishlist-item-price">
+              <span class="price-current">650.000đ</span>
+            </div>
+            <div class="wishlist-item-status">
+              <span class="in-stock"
+                ><i class="fas fa-check-circle"></i> Còn hàng</span
+              >
+            </div>
+            <div class="wishlist-item-actions">
+              <button class="btn btn-primary btn-sm">
+                <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+              </button>
+              <button class="btn-remove" title="Xóa khỏi yêu thích">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="wishlist-item">
+            <div class="wishlist-item-image">
+              <a href="chi-tiet-san-pham.html">
+                <img src="images/nuoc-hoa-chanel.jpg" alt="Chanel No.5" />
+              </a>
+            </div>
+            <div class="wishlist-item-info">
+              <p class="wishlist-item-brand">CHANEL</p>
+              <h3 class="wishlist-item-name">
+                <a href="chi-tiet-san-pham.html">N°5 Eau de Parfum 100ml</a>
+              </h3>
+              <div class="wishlist-item-rating">★★★★★ <span>(456)</span></div>
+              <div class="wishlist-item-meta">
+                <span class="wishlist-item-category"
+                  ><i class="fas fa-tag"></i> Nước hoa</span
+                >
+                <span class="wishlist-item-date"
+                  ><i class="far fa-clock"></i> Đã thêm 1 tuần trước</span
+                >
+              </div>
+            </div>
+            <div class="wishlist-item-price">
+              <span class="price-current">2.800.000đ</span>
+              <span class="price-old">3.500.000đ</span>
+              <span class="wishlist-discount">-20%</span>
+            </div>
+            <div class="wishlist-item-status">
+              <span class="low-stock"
+                ><i class="fas fa-exclamation-circle"></i> Sắp hết hàng</span
+              >
+            </div>
+            <div class="wishlist-item-actions">
+              <button class="btn btn-primary btn-sm">
+                <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+              </button>
+              <button class="btn-remove" title="Xóa khỏi yêu thích">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wishlist Empty State (hidden by default) -->
+        <div class="wishlist-empty" style="display: none">
+          <div class="wishlist-empty-icon">
+            <i class="far fa-heart"></i>
+          </div>
+          <h2>Danh sách yêu thích trống</h2>
+          <p>
+            Hãy thêm sản phẩm yêu thích để dễ dàng theo dõi và mua sắm sau này!
+          </p>
+          <a href="danh-muc.html" class="btn btn-primary">
+            <i class="fas fa-shopping-bag"></i> Khám phá sản phẩm
+          </a>
+        </div>
+
+        <!-- Suggested Products -->
+        <div class="wishlist-suggest">
+          <h2><i class="fas fa-sparkles"></i> Có thể bạn cũng thích</h2>
+          <div class="products-grid">
+            <div class="product-card">
+              <span class="product-badge sale">-25%</span>
+              <div class="product-image">
+                <img src="images/son-mac.jpg" alt="Son MAC" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">MAC</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Retro Matte Lipstick - Ruby Woo</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(342)</span></div>
+                <div class="product-price">
+                  <span class="price-current">480.000đ</span>
+                  <span class="price-old">640.000đ</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/toner.jpg" alt="Toner COSRX" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">COSRX</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >AHA/BHA Clarifying Treatment Toner</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(76)</span></div>
+                <div class="product-price">
+                  <span class="price-current">320.000đ</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <span class="product-badge new">Mới</span>
+              <div class="product-image">
+                <img src="images/dau-duong-moroccanoil.jpg" alt="Moroccanoil" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">MOROCCANOIL</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html">Treatment Original 100ml</a>
+                </h3>
+                <div class="product-rating">★★★★★ <span>(287)</span></div>
+                <div class="product-price">
+                  <span class="price-current">680.000đ</span>
+                  <span class="price-old">900.000đ</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/kem-chong-nang.jpg" alt="Anessa Sunscreen" />
+                <div class="product-actions">
+                  <button><i class="far fa-heart"></i></button>
+                  <button><i class="far fa-eye"></i></button>
+                  <button><i class="fas fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <p class="product-brand">ANESSA</p>
+                <h3 class="product-name">
+                  <a href="chi-tiet-san-pham.html"
+                    >Perfect UV Sunscreen SPF50+</a
+                  >
+                </h3>
+                <div class="product-rating">★★★★★ <span>(312)</span></div>
+                <div class="product-price">
+                  <span class="price-current">440.000đ</span>
+                  <span class="price-old">550.000đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer + Back to top (loaded from js/footer.js) -->
+    <div id="footer-placeholder"></div>
+    <script src="js/footer.js"></script>
+  </body>
+</html>
