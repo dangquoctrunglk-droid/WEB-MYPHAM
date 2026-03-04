@@ -1235,6 +1235,7 @@ textarea {
   .promo-banner {
     flex-direction: column;
     text-align: center;
+    display: flex;
   }
   .newsletter-form {
     flex-direction: column;
