@@ -1,5 +1,5 @@
-/**
- * HAHAHIHI - Footer Component Loader
+﻿/**
+ * SunSea - Footer Component Loader
  * Tự động load footer từ components/footer.html vào trang
  * Hoạt động cả với file:// protocol (không cần server)
  */
@@ -10,10 +10,9 @@
         <div class="footer-grid">
             <div class="footer-brand">
                 <div class="logo">
-                    <div class="logo-icon">HH</div>
-                    <span>HAHAHIHI</span>
+                    <img src="images/logo-sunsea.svg" alt="SunSea - Makeup Store" class="logo-img footer-logo-img" />
                 </div>
-                <p>HAHAHIHI - Hệ thống mỹ phẩm chính hãng hàng đầu Việt Nam. Cam kết 100% sản phẩm authentic từ các thương hiệu uy tín trên thế giới.</p>
+                <p>SunSea - Hệ thống mỹ phẩm chính hãng hàng đầu Việt Nam. Cam kết 100% sản phẩm authentic từ các thương hiệu uy tín trên thế giới.</p>
                 <div class="footer-social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -44,13 +43,13 @@
                 <ul>
                     <li><a href="#">📍 1018 Tô Ký , P.Trung Mỹ Tây, TP.HCM</a></li>
                     <li><a href="#">📞 1900 8888</a></li>
-                    <li><a href="#">✉️ info@hahahihi.vn</a></li>
+                    <li><a href="#">✉️ info@sunsea.vn</a></li>
                     <li><a href="#">🕐 8:00 - 22:00 hàng ngày</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 HAHAHIHI. Tất cả quyền được bảo lưu.</p>
+            <p>&copy; 2026 SunSea. Tất cả quyền được bảo lưu.</p>
         </div>
     </div>
 </footer>

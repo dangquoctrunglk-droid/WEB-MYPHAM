@@ -1,5 +1,5 @@
-/**
- * HAHAHIHI - Header Component Loader
+﻿/**
+ * SunSea - Header Component Loader
  * Tự động load header (top bar + main header + nav) vào trang
  * Tự detect trang hiện tại để highlight nav active
  * Hoạt động với file:// protocol, không cần server
@@ -94,8 +94,7 @@
     '<header class="header">\n' +
     '    <div class="header-main">\n' +
     '        <a href="index.html" class="logo">\n' +
-    '            <div class="logo-icon">HH</div>\n' +
-    "            <span>HAHAHIHI</span>\n" +
+    '            <img src="images/logo-sunsea.svg" alt="SunSea - Makeup Store" class="logo-img" />\n' +
     "        </a>\n" +
     '        <div class="search-bar">\n' +
     '            <input type="text" placeholder="Tìm kiếm sản phẩm, thương hiệu...">\n' +
