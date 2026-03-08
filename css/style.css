@@ -771,6 +771,53 @@ textarea {
   color: var(--text-gray);
 }
 
+/* === BRANDS === */
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+
+.brand-item {
+  text-align: center;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.brand-item:hover {
+  transform: translateY(-6px);
+}
+
+.brand-item img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: var(--transition);
+  margin-bottom: 10px;
+}
+
+.brand-item:hover img {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.brand-item span {
+  font-size: 13px;
+  color: var(--text-gray);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* === TESTIMONIALS === */
 .testimonials-grid {
   display: grid;
