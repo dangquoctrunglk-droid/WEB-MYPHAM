@@ -109,6 +109,18 @@
 
 .category-links li {
   margin-bottom: 10px;
+  animation: slideUp 0.5s ease-out both;
+  opacity: 0; /* Ban đầu ẩn để tránh hiện sớm */
+}
+
+.category-links li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.category-links li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.category-links li:nth-child(3) {
+  animation-delay: 0.3s;
 }
 
 .category-links a {
@@ -269,4 +281,235 @@
 
 .hidden {
   display: none;
+}
+
+/* ========== ANIMATIONS ========== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animations cho các phần tử */
+
+.sitemap-container {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.sitemap-header {
+  animation: slideUp 0.8s ease-out;
+}
+
+.sitemap-header h1 {
+  animation: slideUp 1s ease-out 0.1s both;
+}
+
+.sitemap-header p {
+  animation: slideUp 1s ease-out 0.2s both;
+}
+
+/* Headings chung */
+h2 {
+  animation: slideUp 0.8s ease-out 0.5s both;
+}
+
+.stats {
+  animation: slideUp 1s ease-out 0.3s both;
+}
+
+.stat-card {
+  animation: scaleIn 0.6s ease-out;
+}
+
+.stat-card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.stat-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.stat-card:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.search-sitemap {
+  animation: slideUp 1s ease-out 0.4s both;
+}
+
+.search-sitemap input {
+  animation: slideUp 1s ease-out 0.4s both;
+}
+
+.info-box {
+  animation: slideUp 1.1s ease-out 0.5s both;
+}
+
+.main-pages {
+  animation: slideUp 1.2s ease-out 0.6s both;
+}
+
+.main-page-item {
+  animation: scaleIn 0.6s ease-out;
+}
+
+.main-page-item:nth-child(1) {
+  animation-delay: 0.7s;
+}
+.main-page-item:nth-child(2) {
+  animation-delay: 0.75s;
+}
+.main-page-item:nth-child(3) {
+  animation-delay: 0.8s;
+}
+.main-page-item:nth-child(4) {
+  animation-delay: 0.85s;
+}
+.main-page-item:nth-child(5) {
+  animation-delay: 0.9s;
+}
+.main-page-item:nth-child(6) {
+  animation-delay: 0.95s;
+}
+
+.category-section {
+  animation: slideUp 0.8s ease-out;
+}
+
+.category-section:nth-child(1) {
+  animation-delay: 1s;
+}
+.category-section:nth-child(2) {
+  animation-delay: 1.1s;
+}
+.category-section:nth-child(3) {
+  animation-delay: 1.2s;
+}
+.category-section:nth-child(4) {
+  animation-delay: 1.3s;
+}
+.category-section:nth-child(5) {
+  animation-delay: 1.4s;
+}
+.category-section:nth-child(6) {
+  animation-delay: 1.5s;
+}
+.category-section:nth-child(7) {
+  animation-delay: 1.6s;
+}
+.category-section:nth-child(8) {
+  animation-delay: 1.7s;
+}
+.category-section:nth-child(9) {
+  animation-delay: 1.8s;
+}
+.category-section:nth-child(10) {
+  animation-delay: 1.9s;
+}
+.category-section:nth-child(11) {
+  animation-delay: 2s;
+}
+
+/* Hover animations */
+
+.category-icon {
+  transition: all 0.3s ease;
+}
+
+.category-section:hover .category-icon {
+  animation: bounce 0.6s ease-in-out;
+}
+
+.search-sitemap button {
+  animation: slideInRight 0.8s ease-out 0.5s both;
+}
+
+.back-to-home a {
+  animation: slideUp 1.4s ease-out 1.5s both;
+}
+
+/* Smooth transitions khi search */
+.category-section.hidden {
+  animation: fadeOut 0.3s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.no-results {
+  animation: slideUp 0.4s ease-out !important;
 }
