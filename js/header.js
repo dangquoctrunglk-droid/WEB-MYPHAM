@@ -115,6 +115,10 @@
     "                <span>Giỏ hàng</span>\n" +
     '                <div class="badge">2</div>\n' +
     "            </a>\n" +
+    '            <a href="sitemap.html" class="header-action" title="Xem sơ đồ trang">\n' +
+    '                <i class="fas fa-sitemap"></i>\n' +
+    "                <span>Sitemap</span>\n" +
+    "            </a>\n" +
     "        </div>\n" +
     "    </div>\n" +
     '    <nav class="nav">\n' +

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sơ Đồ Trang Web - SunSea</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sitemap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <script src="js/header.js"></script>
+
+    <!-- Main Content -->
+    <div class="sitemap-container">
+      <!-- Header -->
+      <div class="sitemap-header">
+        <h1>🗺️ Sơ Đồ Trang Web</h1>
+        <p>Tìm kiếm tất cả các trang, danh mục và dịch vụ của SunSea</p>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-number">18</div>
+          <div class="stat-label">Trang chính</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Danh mục sản phẩm</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Dễ tìm kiếm</div>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div class="search-sitemap">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Tìm kiếm trang (VD: sản phẩm, khuyến mãi...)"
+        />
+        <button onclick="searchSitemap()"><i class="fas fa-search"></i></button>
+      </div>
+
+      <!-- Info Box -->
+      <div class="info-box">
+        <h3>💡 Cách sử dụng Sơ Đồ Trang</h3>
+        <p>• Dùng ô tìm kiếm phía trên để tìm trang bạn cần</p>
+        <p>• Nhấp vào bất kỳ liên kết nào để truy cập trang đó</p>
+        <p>
+          • Xem <strong>Trang Chính</strong> phía dưới để nhanh chóng điều hướng
+          đến các trang phổ biến
+        </p>
+      </div>
+
+      <!-- Main Pages Quick Access -->
+      <h2 style="text-align: center; margin-bottom: 20px">🌟 Trang Chính</h2>
+      <div class="main-pages">
+        <div class="main-page-item">
+          <a href="index.html">
+            <div class="main-page-icon">🏠</div>
+            <div class="main-page-label">Trang Chủ</div>
+          </a>
+        </div>
+        <div class="main-page-item">
+          <a href="san-pham.html">
+            <div class="main-page-icon">🛍️</div>
+            <div class="main-page-label">Sản Phẩm</div>
+          </a>
+        </div>
+        <div class="main-page-item">
+          <a href="khuyen-mai.html">
+            <div class="main-page-icon">🎉</div>
+            <div class="main-page-label">Khuyến Mãi</div>
+          </a>
+        </div>
+        <div class="main-page-item">
+          <a href="gioi-thieu.html">
+            <div class="main-page-icon">ℹ️</div>
+            <div class="main-page-label">Giới Thiệu</div>
+          </a>
+        </div>
+        <div class="main-page-item">
+          <a href="tuyen-dung.html">
+            <div class="main-page-icon">💼</div>
+            <div class="main-page-label">Tuyển Dụng</div>
+          </a>
+        </div>
+        <div class="main-page-item">
+          <a href="thanh-toan.html">
+            <div class="main-page-icon">🛒</div>
+            <div class="main-page-label">Giỏ Hàng</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Categories -->
+      <h2 style="text-align: center; margin: 40px 0 25px">
+        📂 Danh Mục & Tính Năng
+      </h2>
+      <div class="sitemap-categories">
+        <!-- Sản Phẩm -->
+        <div class="category-section">
+          <div class="category-icon">🧴</div>
+          <h2><i class="fas fa-box"></i> Sản Phẩm</h2>
+          <ul class="category-links">
+            <li><a href="san-pham.html">All Sản Phẩm</a></li>
+            <li><a href="san-pham-moi.html">Sản Phẩm Mới</a></li>
+            <li><a href="chi-tiet-san-pham.html">Chi Tiết Sản Phẩm</a></li>
+          </ul>
+        </div>
+
+        <!-- Chăm Sóc Da -->
+        <div class="category-section">
+          <div class="category-icon">💆</div>
+          <h2><i class="fas fa-spa"></i> Chăm Sóc Da</h2>
+          <ul class="category-links">
+            <li><a href="san-pham.html">Sản Phẩm Chăm Sóc</a></li>
+            <li><a href="danh-muc.html">Xem Danh Mục</a></li>
+          </ul>
+        </div>
+
+        <!-- Trang Điểm -->
+        <div class="category-section">
+          <div class="category-icon">💄</div>
+          <h2><i class="fas fa-palette"></i> Trang Điểm</h2>
+          <ul class="category-links">
+            <li><a href="trang-diem.html">Trang Điểm & Makeup</a></li>
+          </ul>
+        </div>
+
+        <!-- Nước Hoa -->
+        <div class="category-section">
+          <div class="category-icon">🌸</div>
+          <h2><i class="fas fa-flower"></i> Nước Hoa</h2>
+          <ul class="category-links">
+            <li><a href="nuoc-hoa.html">Bộ Sưu Tập Nước Hoa</a></li>
+          </ul>
+        </div>
+
+        <!-- Chăm Sóc Tóc -->
+        <div class="category-section">
+          <div class="category-icon">💇</div>
+          <h2><i class="fas fa-wind"></i> Chăm Sóc Tóc</h2>
+          <ul class="category-links">
+            <li><a href="cham-soc-toc.html">Sản Phẩm Chăm Sóc Tóc</a></li>
+          </ul>
+        </div>
+
+        <!-- Chăm Sóc Cơ Thể -->
+        <div class="category-section">
+          <div class="category-icon">🛁</div>
+          <h2><i class="fas fa-water"></i> Chăm Sóc Cơ Thể</h2>
+          <ul class="category-links">
+            <li><a href="cham-soc-co-the.html">Sản Phẩm Body Care</a></li>
+          </ul>
+        </div>
+
+        <!-- Mỹ Phẩm Organic -->
+        <div class="category-section">
+          <div class="category-icon">🌿</div>
+          <h2><i class="fas fa-leaf"></i> Organic</h2>
+          <ul class="category-links">
+            <li><a href="my-pham-organic.html">Mỹ Phẩm Tự Nhiên</a></li>
+          </ul>
+        </div>
+
+        <!-- Khuyến Mãi -->
+        <div class="category-section">
+          <div class="category-icon">🎉</div>
+          <h2><i class="fas fa-tag"></i> Khuyến Mãi</h2>
+          <ul class="category-links">
+            <li><a href="khuyen-mai.html">Chương Trình Khuyến Mãi</a></li>
+          </ul>
+        </div>
+
+        <!-- Tài Khoản -->
+        <div class="category-section">
+          <div class="category-icon">👤</div>
+          <h2><i class="fas fa-user-circle"></i> Tài Khoản</h2>
+          <ul class="category-links">
+            <li><a href="dang-nhap.html">Đăng Nhập</a></li>
+            <li><a href="dang-ky.html">Đăng Ký</a></li>
+            <li><a href="yeu-thich.html">Danh Sách Yêu Thích</a></li>
+          </ul>
+        </div>
+
+        <!-- Thanh Toán -->
+        <div class="category-section">
+          <div class="category-icon">💳</div>
+          <h2><i class="fas fa-credit-card"></i> Thanh Toán</h2>
+          <ul class="category-links">
+            <li><a href="thanh-toan.html">Giỏ Hàng & Thanh Toán</a></li>
+          </ul>
+        </div>
+
+        <!-- Thông Tin -->
+        <div class="category-section">
+          <div class="category-icon">ℹ️</div>
+          <h2><i class="fas fa-info-circle"></i> Thông Tin</h2>
+          <ul class="category-links">
+            <li><a href="gioi-thieu.html">Về SunSea</a></li>
+            <li><a href="tuyen-dung.html">Tuyển Dụng</a></li>
+            <li><a href="form-tuyen-dung.html">Form Ứng Tuyển</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- No Results Message -->
+      <div id="noResults" class="no-results hidden">
+        <p>❌ Không tìm thấy trang phù hợp. Vui lòng thử tìm kiếm khác.</p>
+      </div>
+
+      <!-- Back to Home -->
+      <div class="back-to-home">
+        <a href="index.html">← Quay Lại Trang Chủ</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="js/footer.js"></script>
+
+    <script>
+      const sitemapData = [
+        {
+          title: "Trang Chủ",
+          href: "index.html",
+          keywords: ["trang chủ", "home"],
+        },
+        {
+          title: "Sản Phẩm",
+          href: "san-pham.html",
+          keywords: ["sản phẩm", "products", "mua"],
+        },
+        {
+          title: "Sản Phẩm Mới",
+          href: "san-pham-moi.html",
+          keywords: ["sản phẩm mới", "new", "mới"],
+        },
+        {
+          title: "Chi Tiết Sản Phẩm",
+          href: "chi-tiet-san-pham.html",
+          keywords: ["chi tiết", "detail"],
+        },
+        {
+          title: "Danh Mục",
+          href: "danh-muc.html",
+          keywords: ["danh mục", "category", "categories"],
+        },
+        {
+          title: "Trang Điểm",
+          href: "trang-diem.html",
+          keywords: ["trang điểm", "makeup", "make up"],
+        },
+        {
+          title: "Nước Hoa",
+          href: "nuoc-hoa.html",
+          keywords: ["nước hoa", "perfume", "scent"],
+        },
+        {
+          title: "Chăm Sóc Tóc",
+          href: "cham-soc-toc.html",
+          keywords: ["tóc", "hair", "chăm sóc tóc"],
+        },
+        {
+          title: "Chăm Sóc Cơ Thể",
+          href: "cham-soc-co-the.html",
+          keywords: ["body care", "body", "cơ thể"],
+        },
+        {
+          title: "Mỹ Phẩm Organic",
+          href: "my-pham-organic.html",
+          keywords: ["organic", "tự nhiên", "organic"],
+        },
+        {
+          title: "Khuyến Mãi",
+          href: "khuyen-mai.html",
+          keywords: ["khuyến mãi", "sale", "discount", "giảm giá"],
+        },
+        {
+          title: "Yêu Thích",
+          href: "yeu-thich.html",
+          keywords: ["yêu thích", "wishlist", "favorites"],
+        },
+        {
+          title: "Thanh Toán",
+          href: "thanh-toan.html",
+          keywords: ["thanh toán", "giỏ hàng", "checkout", "cart"],
+        },
+        {
+          title: "Đăng Nhập",
+          href: "dang-nhap.html",
+          keywords: ["đăng nhập", "login", "account"],
+        },
+        {
+          title: "Đăng Ký",
+          href: "dang-ky.html",
+          keywords: ["đăng ký", "register", "signup"],
+        },
+        {
+          title: "Giới Thiệu",
+          href: "gioi-thieu.html",
+          keywords: ["giới thiệu", "about", "about us"],
+        },
+        {
+          title: "Tuyển Dụng",
+          href: "tuyen-dung.html",
+          keywords: ["tuyển dụng", "tuyển", "job", "career"],
+        },
+        {
+          title: "Form Ứng Tuyển",
+          href: "form-tuyen-dung.html",
+          keywords: ["form", "ứng tuyển", "application"],
+        },
+      ];
+
+      function searchSitemap() {
+        const query = document
+          .getElementById("searchInput")
+          .value.toLowerCase()
+          .trim();
+        const categories = document.querySelectorAll(".category-section");
+        const mainPageItems = document.querySelectorAll(".main-page-item");
+        let foundAny = false;
+
+        if (query === "") {
+          categories.forEach((cat) => cat.classList.remove("hidden"));
+          mainPageItems.forEach((item) => item.classList.remove("hidden"));
+          document.getElementById("noResults").classList.add("hidden");
+          return;
+        }
+
+        // Search in categories
+        categories.forEach((cat) => {
+          const links = cat.querySelectorAll("a");
+          let hasMatch = false;
+          links.forEach((link) => {
+            const text = link.textContent.toLowerCase();
+            if (text.includes(query)) {
+              link.style.display = "";
+              hasMatch = true;
+              foundAny = true;
+            } else {
+              link.style.display = "none";
+            }
+          });
+          if (hasMatch) {
+            cat.classList.remove("hidden");
+          } else {
+            cat.classList.add("hidden");
+          }
+        });
+
+        // Search in main pages
+        mainPageItems.forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          if (text.includes(query)) {
+            item.classList.remove("hidden");
+            foundAny = true;
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+
+        // Show/hide no results
+        document
+          .getElementById("noResults")
+          .classList.toggle("hidden", foundAny);
+      }
+
+      // Allow Enter key to search
+      document
+        .getElementById("searchInput")
+        .addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            searchSitemap();
+          }
+        });
+
+      // Real-time search
+      document
+        .getElementById("searchInput")
+        .addEventListener("input", searchSitemap);
+    </script>
+  </body>
+</html>
