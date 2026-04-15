@@ -375,6 +375,118 @@
         document.getElementById(tabId).classList.add("active");
         event.currentTarget.classList.add("active");
       }
+
+      function updateProductDetailFromQuery() {
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get("name");
+
+        if (!name) return;
+
+        const brand = params.get("brand") || "SunSea";
+        const image = params.get("image") || "images/serum-vitamin-c.jpg";
+        const price = params.get("price") || "420.000đ";
+        const oldPrice = params.get("oldPrice") || "";
+        const stars = params.get("stars") || "★★★★★";
+        const reviews = params.get("reviews") || "(128 đánh giá)";
+        const badge = params.get("badge") || "";
+
+        const breadcrumbCurrent = document.querySelector(
+          ".breadcrumb .current",
+        );
+        const brandTag = document.querySelector(".product-brand-tag");
+        const productTitle = document.querySelector(".product-info-detail h1");
+        const mainImage = document.getElementById("mainImage");
+        const firstThumb = document.querySelector(".thumb-list .thumb img");
+        const ratingStars = document.querySelector(".rating-reviews .stars");
+        const ratingCount = document.querySelector(
+          ".rating-reviews span:nth-child(4)",
+        );
+        const priceCurrent = document.querySelector(
+          ".price-box .price-current",
+        );
+        const priceOld = document.querySelector(".price-box .price-old");
+        const discountTag = document.querySelector(".price-box .discount-tag");
+        const shortDesc = document.querySelector(".product-description-short");
+        const sku = document.querySelector(".product-sku");
+        const metaBrand = document.querySelector(".product-meta span strong");
+        const reviewTabButton = document.querySelector(
+          '.tab-header button[onclick*="reviews"]',
+        );
+
+        document.title = name + " - Chi Tiết Sản Phẩm - SunSea";
+
+        if (breadcrumbCurrent) breadcrumbCurrent.textContent = name;
+        if (brandTag) brandTag.textContent = brand.toUpperCase();
+        if (productTitle) productTitle.textContent = name;
+
+        if (mainImage) {
+          mainImage.src = image;
+          mainImage.alt = name;
+        }
+
+        if (firstThumb) {
+          firstThumb.src = image;
+          firstThumb.alt = name;
+        }
+
+        if (ratingStars) ratingStars.textContent = stars;
+        if (ratingCount) {
+          const cleanedReviews = reviews.replace(/[()]/g, "").trim();
+          ratingCount.textContent =
+            cleanedReviews.indexOf("đánh giá") !== -1
+              ? cleanedReviews
+              : cleanedReviews + " đánh giá";
+        }
+
+        if (priceCurrent) priceCurrent.textContent = price;
+
+        if (priceOld) {
+          if (oldPrice) {
+            priceOld.textContent = oldPrice;
+            priceOld.style.display = "inline";
+          } else {
+            priceOld.style.display = "none";
+          }
+        }
+
+        if (discountTag) {
+          if (badge && badge.indexOf("-") === 0) {
+            discountTag.textContent = badge;
+            discountTag.style.display = "inline-block";
+          } else {
+            discountTag.style.display = "none";
+          }
+        }
+
+        if (shortDesc) {
+          shortDesc.textContent =
+            name +
+            " là sản phẩm nổi bật từ " +
+            brand +
+            ", đang được quan tâm nhiều tại SunSea. Nhấn thêm vào giỏ hoặc mua ngay để trải nghiệm sản phẩm phù hợp với nhu cầu chăm sóc da của bạn.";
+        }
+
+        if (sku) {
+          const skuCode = name
+            .toUpperCase()
+            .replace(/[^A-Z0-9]+/g, "-")
+            .replace(/^-+|-+$/g, "")
+            .slice(0, 20);
+          sku.textContent = "SKU: SS-" + skuCode;
+        }
+
+        if (metaBrand && metaBrand.parentElement) {
+          metaBrand.parentElement.innerHTML =
+            "<strong>Thương hiệu:</strong> " + brand;
+        }
+
+        if (reviewTabButton) {
+          const cleanedReviews = reviews.replace(/[()]/g, "").trim();
+          reviewTabButton.textContent = "Đánh giá (" + cleanedReviews + ")";
+        }
+      }
+
+      updateProductDetailFromQuery();
     </script>
   </body>
 </html>

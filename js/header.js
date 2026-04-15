@@ -13,7 +13,7 @@
     { href: "index.html", label: "Trang chủ" },
     {
       href: "danh-muc.html",
-      label: "Danh mục",
+      label: "Danh mục sản phẩm",
       dropdown: [
         { href: "san-pham.html", label: "Chăm sóc da" },
         { href: "trang-diem.html", label: "Trang điểm" },
@@ -29,7 +29,7 @@
     { href: "tuyen-dung.html", label: "Tuyển dụng" },
   ];
 
-  // Pages that should mark "Danh mục" as active
+  // Pages that should mark "Danh mục sản phẩm" as active
   var danhMucPages = [
     "danh-muc.html",
     "san-pham.html",
@@ -135,5 +135,82 @@
     placeholder.outerHTML = headerHTML;
   } else {
     document.body.insertAdjacentHTML("afterbegin", headerHTML);
+  }
+
+  function normalizeImagePath(src) {
+    if (!src) return "";
+
+    try {
+      var imgUrl = new URL(src, window.location.href);
+      var fileName = imgUrl.pathname.split("/").pop();
+      return fileName ? "images/" + fileName : "";
+    } catch (error) {
+      return src;
+    }
+  }
+
+  function buildProductDetailUrl(card, fallbackHref) {
+    if (!card) return fallbackHref || "chi-tiet-san-pham.html";
+
+    var nameEl = card.querySelector(".product-name a, .product-name");
+    var brandEl = card.querySelector(".product-brand");
+    var imageEl = card.querySelector(".product-image img");
+    var priceCurrentEl = card.querySelector(".price-current");
+    var priceOldEl = card.querySelector(".price-old");
+    var ratingEl = card.querySelector(".product-rating");
+    var ratingCountEl = ratingEl ? ratingEl.querySelector("span") : null;
+    var badgeEl = card.querySelector(".product-badge");
+
+    var name = nameEl ? nameEl.textContent.trim() : "Sản phẩm";
+    var brand = brandEl ? brandEl.textContent.trim() : "SunSea";
+    var image = imageEl ? normalizeImagePath(imageEl.getAttribute("src")) : "";
+    var priceCurrent = priceCurrentEl ? priceCurrentEl.textContent.trim() : "";
+    var priceOld = priceOldEl ? priceOldEl.textContent.trim() : "";
+    var ratingText = ratingEl ? ratingEl.textContent : "";
+    var ratingStarsMatch = ratingText.match(/[★☆]+/);
+    var ratingStars = ratingStarsMatch ? ratingStarsMatch[0] : "★★★★★";
+    var reviewCount = ratingCountEl ? ratingCountEl.textContent.trim() : "";
+    var badge = badgeEl ? badgeEl.textContent.trim() : "";
+
+    var params = new URLSearchParams();
+    params.set("name", name);
+    params.set("brand", brand);
+    if (image) params.set("image", image);
+    if (priceCurrent) params.set("price", priceCurrent);
+    if (priceOld) params.set("oldPrice", priceOld);
+    if (ratingStars) params.set("stars", ratingStars);
+    if (reviewCount) params.set("reviews", reviewCount);
+    if (badge) params.set("badge", badge);
+
+    return "chi-tiet-san-pham.html?" + params.toString();
+  }
+
+  function enhanceProductDetailLinks() {
+    var detailLinks = document.querySelectorAll(
+      '.product-name a[href*="chi-tiet-san-pham.html"]',
+    );
+
+    detailLinks.forEach(function (link) {
+      var card = link.closest(".product-card");
+      var detailUrl = buildProductDetailUrl(card, link.getAttribute("href"));
+
+      link.setAttribute("href", detailUrl);
+
+      var imageWrap = card ? card.querySelector(".product-image") : null;
+      if (!imageWrap || imageWrap.dataset.detailBound === "1") return;
+
+      imageWrap.style.cursor = "pointer";
+      imageWrap.addEventListener("click", function (event) {
+        if (event.target.closest(".product-actions")) return;
+        window.location.href = detailUrl;
+      });
+      imageWrap.dataset.detailBound = "1";
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", enhanceProductDetailLinks);
+  } else {
+    enhanceProductDetailLinks();
   }
 })();

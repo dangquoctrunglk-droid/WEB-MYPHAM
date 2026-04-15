@@ -486,9 +486,9 @@ h2 {
   animation: bounce 0.6s ease-in-out;
 }
 
-.search-sitemap button {
+/* .search-sitemap button {
   animation: slideInRight 0.8s ease-out 0.5s both;
-}
+} */
 
 .back-to-home a {
   animation: slideUp 1.4s ease-out 1.5s both;
